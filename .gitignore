@@ -12,4 +12,7 @@ source/stylesheets/screen.css
 vendor
 node_modules
 Gemfile.lock
+<<<<<<< HEAD
 .vagrant
+=======
+>>>>>>> c48f85ff6feafd206583556f59139cf5bf82f8f4
