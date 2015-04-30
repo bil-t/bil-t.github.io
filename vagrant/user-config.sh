@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
-git config --global user.name "git.user"
-git config --global user.email "git.user@github.com"
+git config --global user.name bil-t
+git config --global user.email bil-t@users.noreply.github.com
 
 cd
 pwd
