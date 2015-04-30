@@ -30,7 +30,7 @@ fi
 cd /vagrant
 
 #clone octopress and merge it with the parent git project
-if [ ! -d "/vagrant/octopress" ]; then
+if [ ! -d "/vagrant/source" ]; then
 	git clone git://github.com/imathis/octopress.git octopress
 	rm -Rf octopress/.git
 	shopt -s dotglob
@@ -42,9 +42,19 @@ if [ ! -d "/vagrant/octopress" ]; then
 	#bind server to all inetrfaces
 	sed -i.bak '/^server_port/a server_host     = "0.0.0.0"   # server bind address for preview server' Rakefile
 	sed -i.bak 's/rackup --port #{server_port}/rackup --host #{server_host} --port #{server_port}/g' Rakefile
-
 	#install dependencies
 	bundle install
 	#install default theme
 	rake install
+fi
+
+if [ ! -d "/vagrant/_deploy" ]; then
+	#install dependencies
+	bundle install	
+	#setup github pages
+	rake setup_github_pages["https://github.com/bil-t/bil-t.github.io"]	
+    git checkout . 
+    cd _deploy    
+	git pull -s recursive -Xtheirs --no-edit origin master
+    cd ..
 fi
