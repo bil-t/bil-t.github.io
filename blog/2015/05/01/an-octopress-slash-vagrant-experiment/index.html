@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>An Octopress/Vagrant Experiment - Bilog</title>
+  <meta name="author" content="El Tayara Bilal">
+
+  
+  <meta name="description" content="In my spare time, I like to try and learn new software technologies.
+For this I use my Windows laptop. The problem is that after several cycles of &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Bilog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Bilog</a></h1>
+  
+    <h2>Bilal&#8217;s blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="bil-t.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">An Octopress/Vagrant Experiment</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-05-01T22:52:06+00:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>10:52 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>In my spare time, I like to try and learn new software technologies.
+For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
+
+<p>Recently, after struggling with ruby installation on Windows I decided to reconsider Linux. Since I needed windows for other reasons, I decided to try using virtualization. I started by using <a href="https://www.virtualbox.org/">VirtualBox</a> to configure a Linux guest machine. While discussing this with a friend, he suggested trying <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
+
+<!-- more -->
+
+
+<p>I visited <a href="https://www.vagrantup.com/">Vagrant</a> website and it immediately got my attention for its simplicity. All you need is a configuration file, a small set of commands and the virtual machine is up an running.<br/>
+Playing around with Vagrant tutorial lead me to the idea of creating a sandbox for each software development experiment or project I work on.</p>
+
+<p>I decided to test the idea of this sandbox on my next project: this blog.<br/>
+As many software developers I settled on using <a href="http://octopress.org/">Octopress</a>/<a href="https://github.com/">GitHub</a> for my blog.<br/>
+For this, I needed a Linux machine with required tools installed and the blog source to be synchronized. After several iteration I got to a stage where I&rsquo;m able to edit my blog from any computer connected to the internet. <br/>
+In three steps I&#8217;ma able to deploy a blog sandbox and start blogging:</p>
+
+<ol>
+<li>First, install required tools: <a href="http://git-scm.com/">git</a>, <a href="https://www.virtualbox.org/">VirtualBox</a> and <a href="https://www.vagrantup.com/">Vagrant</a>.</li>
+<li>Second, clone my blog repository,</li>
+<li>Finally, start the sandbox by switching to its directory and running Vagrant up</li>
+</ol>
+
+
+<p>It took me some time to get to a simple and repeatable process. <br/>
+I&rsquo;m glad of the result of this experiment; I&rsquo;m using my blog sandbox to publish this post. This experiment showed me the real benefits from using <a href="https://www.vagrantup.com/">Vagrant</a> and I&rsquo;m pretty sure I&rsquo;ll be using it in other future projects.</p>
+
+<p>Although this post is not intended to be a tutorial on how to use <a href="https://www.vagrantup.com/">Vagrant</a> or <a href="http://octopress.org/">Octopress</a>, I&rsquo;m just going to mention a couple of things I found interesting as well as some difficulties I encountered and how I solved them.</p>
+
+<h3>What I liked most</h3>
+
+<ul>
+<li><strong>Easy X11 forwarding over SSH connections</strong> by adding <code>config.ssh.forward_x11 = true</code> to Vagranfile. With <a href="http://mobaxterm.mobatek.net/">MobaXterm</a> running on my Windows host I was able to display the guest.</li>
+<li><strong>Easy port forwarding</strong> by adding <code>config.vm.network "forwarded_port", guest: 4000, host: 4000</code> all traffic network to the port 4000 on the host machine, was actually forwarded to the guest machine on the specified port.</li>
+<li><strong><a href="http://docs.vagrantup.com/v2/synced-folders/">Vagrant synced folder</a></strong> enables editing the files from both the guest and the host.</li>
+</ul>
+
+
+<h3>What took me some time to figure out</h3>
+
+<ul>
+<li><p><strong>Shell provisioner as vVagrant user</strong> and not as root: using <code>privileged false</code> in Vagrantfile didn&rsquo;t work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user <code>su -c "source /vagrant/vagrant/user-config.sh" vagrant</code></p></li>
+<li><p><strong>Blog preview only accessible from guest</strong>, at first I thought it was a problem with port forwarding, but finally, after tedious searches on the internet, I found out that binding the server to 0.0.0.0 in Rakefile was the solution. <br/>
+<code>server_host     = "0.0.0.0"   # server bind address for preview server</code><br/>
+<code>rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")</code></p></li>
+</ul>
+
+
+<p>If you&rsquo;re interessted in trying, the complete configuration is available in the  <a href="https://github.com/bil-t/octopress-vagrant-setup">octopress-vagrant-setup</a> github repository.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">El Tayara Bilal</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-05-01T22:52:06+00:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>10:52 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" data-via="" data-counturl="http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/05/01/an-octopress-slash-vagrant-experiment/">An Octopress/Vagrant Experiment</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - El Tayara Bilal -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

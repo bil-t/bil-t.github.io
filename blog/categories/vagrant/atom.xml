@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Bilog]]></title>
-  <link href="http://bil-t.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Vagrant | Bilog]]></title>
+  <link href="http://bil-t.github.io/blog/categories/vagrant/atom.xml" rel="self"/>
   <link href="http://bil-t.github.io/"/>
   <updated>2015-05-01T23:02:56+00:00</updated>
   <id>http://bil-t.github.io/</id>
