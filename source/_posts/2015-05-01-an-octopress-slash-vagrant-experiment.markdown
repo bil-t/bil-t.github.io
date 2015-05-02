@@ -15,17 +15,17 @@ Playing around with Vagrant tutorial lead me to the idea of creating a sandbox f
   
 I decided to test the idea of this sandbox on my next project: this blog.  
 As many software developers I settled on using [Octopress](http://octopress.org/)/[GitHub](https://github.com/) for my blog.  
-For this, I needed a Linux machine with required tools installed and the blog source to be synchronized. After several iteration I got to a stage where I'm able to edit my blog from any computer connected to the internet.   
-In three steps I'ma able to deploy a blog sandbox and start blogging:
+For this purpose, I needed a Linux machine with the required tools installed and a synced copy of the blog source. After several iteration I got to a stage where I'm able to edit the blog from any computer connected to the internet.   
+In three steps I'm able to deploy a blog sandbox and start blogging:
 
 1. First, install required tools: [git](http://git-scm.com/), [VirtualBox](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/).
-2. Second, clone my blog repository,
+2. Second, clone the blog repository,
 3. Finally, start the sandbox by switching to its directory and running Vagrant up
 
-It took me some time to get to a simple and repeatable process.   
-I'm glad of the result of this experiment; I'm using my blog sandbox to publish this post. This experiment showed me the real benefits from using [Vagrant](https://www.vagrantup.com/) and I'm pretty sure I'll be using it in other future projects. 
+It took me some time to get to a simple and repeatable process.
+I'm glad of the results as I'm using the sandbox to publish this post. This experiment showed me the real benefits from using [Vagrant](https://www.vagrantup.com/) and I'm pretty sure I'll be using it in future projects. 
 
-Although this post is not intended to be a tutorial on how to use [Vagrant](https://www.vagrantup.com/) or [Octopress](http://octopress.org/), I'm just going to mention a couple of things I found interesting as well as some difficulties I encountered and how I solved them. 
+Although this post is not intended to be a tutorial on how to use [Vagrant](https://www.vagrantup.com/) or [Octopress](http://octopress.org/), I'm going to mention a couple of things I found interesting. I'll also write about some difficulties I encountered and how I solved them. 
 
 ###What I liked most   
 - **Easy X11 forwarding over SSH connections** by adding `config.ssh.forward_x11 = true` to Vagranfile. With [MobaXterm](http://mobaxterm.mobatek.net/) running on my Windows host I was able to display the guest.
@@ -33,7 +33,7 @@ Although this post is not intended to be a tutorial on how to use [Vagrant](http
 - **[Vagrant synced folder](http://docs.vagrantup.com/v2/synced-folders/)** enables editing the files from both the guest and the host.
 
 ###What took me some time to figure out   
-- **Shell provisioner as vVagrant user** and not as root: using `privileged false` in Vagrantfile didn't work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user `su -c "source /vagrant/vagrant/user-config.sh" vagrant`
+- **Shell provisioner as `vagrant` user** and not as root: using `privileged false` in Vagrantfile didn't work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user `su -c "source /vagrant/vagrant/user-config.sh" vagrant`
  
 - **Blog preview only accessible from guest**, at first I thought it was a problem with port forwarding, but finally, after tedious searches on the internet, I found out that binding the server to 0.0.0.0 in Rakefile was the solution.   
  `server_host     = "0.0.0.0"   # server bind address for preview server`  
