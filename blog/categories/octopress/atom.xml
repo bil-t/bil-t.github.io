@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | Bilog]]></title>
+  <title><![CDATA[Category: octopress | Bilal El Tayara]]></title>
   <link href="http://bil-t.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://bil-t.github.io/"/>
-  <updated>2015-05-02T21:43:28+00:00</updated>
+  <updated>2015-05-02T22:20:53+00:00</updated>
   <id>http://bil-t.github.io/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
