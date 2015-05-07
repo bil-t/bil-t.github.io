@@ -75,12 +75,12 @@ twitter_widget_id: 594631932786409472
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: 113857264012711812244
 googleplus_hidden: false
 
 # Pinboard
