@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software development | Bilal El Tayara]]></title>
+  <link href="http://bil-t.github.io/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://bil-t.github.io/"/>
+  <updated>2015-05-13T20:11:49+00:00</updated>
+  <id>http://bil-t.github.io/</id>
+  <author>
+    <name><![CDATA[El Tayara Bilal]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[3 Things Every Software Development Manager Should Do]]></title>
+    <link href="http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
+    <updated>2015-05-13T20:07:01+00:00</updated>
+    <id>http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
+    <content type="html"><![CDATA[<p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Inspection is your friend</h2>
+
+<p>It&rsquo;s crucial to know how your code source health is.
+Complex code tend to have a high maintenance cost and makes entry cost higher for a newcomer. Failing to apply best practices and recommendations can result in various bugs. A poor test coverage makes future development very likely to introduce regressions.<br/>
+Static and dynamic analysis are you best friends to give you accurate indicators about your code health. They also help you take appropriate actions to cure the spotted deficiencies.<br/>
+If you don&rsquo;t have this yet in place, all it takes is these simple steps:<br/>
+1. Start by setting up a continuous code analysis process for your source code<br/>
+2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
+3. Every time an issue is fixed, adjust the quality gate accordingly</p>
+
+<h2>Better double-check</h2>
+
+<p>Static and dynamic code analysis can help you track the source code health but when it comes to technical design they are rather limited.<br/>
+When software development manager drifts away from the code because of other duties that require his attention, code review can be a good help.<br/>
+By reviewing the changes regularly the software development manager can stay up to date with the design changes and can intervene at an early stage if needed.
+How to do it? By a continuous automated code review generation process:<br/>
+1. Automatically create a code review for each new change<br/>
+2. Keep the pace, perform the review regularly</p>
+
+<h2>Get your hands dirty</h2>
+
+<p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
+My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
+]]></content>
+  </entry>
+  
+</feed>
