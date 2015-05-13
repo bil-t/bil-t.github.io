@@ -42,10 +42,9 @@ You can make use of the Text-to-speech for Google Play content to read e-books.
 For this you need to activate the "Read aloud" option form the top menu.
 It only works with EPUB files, and I recommend activating the "High quality voice" option for a better listening experience.
 
-{% img center /images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/google-play-books.png %}
-  
-
-
-> photo credits: <a href="http://www.flickr.com/photos/74109564@N08/8119732223">Audiobook\_logo\_small</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
+{% img center /images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/google-play-books.png %}  
+<br>
+----------
+*photo credits:* <a href="http://www.flickr.com/photos/74109564@N08/8119732223">Audiobook\_logo\_small</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
 <a href="https://www.flickr.com/photos/93112746@N05/11059505474">So many MOOCs</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>
 
