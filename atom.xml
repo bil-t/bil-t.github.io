@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Bilal El Tayara]]></title>
-  <link href="http://bil-t.github.io/atom.xml" rel="self"/>
-  <link href="http://bil-t.github.io/"/>
-  <updated>2015-05-14T20:38:59+00:00</updated>
-  <id>http://bil-t.github.io/</id>
+  <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
+  <link href="http://bilal.eltayara.net/"/>
+  <updated>2015-05-14T21:50:22+00:00</updated>
+  <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[3 Things Every Software Development Manager Should Do]]></title>
-    <link href="http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
+    <link href="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
     <updated>2015-05-13T20:07:01+00:00</updated>
-    <id>http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
+    <id>http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
     <content type="html"><![CDATA[<p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
 
 <!-- more -->
@@ -35,7 +35,7 @@ If you don&rsquo;t have this yet in place, all it takes is these simple steps:<b
 2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
 3. Every time an issue is fixed, adjust the quality gate accordingly</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
 
 <h2>Better double-check</h2>
 
@@ -46,14 +46,14 @@ How to do it? By a continuous automated code review generation process:<br/>
 1. Automatically create a code review for each new change<br/>
 2. Keep the pace, perform the review regularly</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
 
 <h2>Get your hands dirty</h2>
 
 <p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
 My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
 
 <h2><br></h2>
 
@@ -63,9 +63,9 @@ My suggestion, make room to code. Besides giving you an accurate idea of the wor
   
   <entry>
     <title type="html"><![CDATA[5 Things You Can Try To Get Back Wasted Commute Time]]></title>
-    <link href="http://bil-t.github.io/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time/"/>
+    <link href="http://bilal.eltayara.net/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time/"/>
     <updated>2015-05-05T20:52:33+00:00</updated>
-    <id>http://bil-t.github.io/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time</id>
+    <id>http://bilal.eltayara.net/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time</id>
     <content type="html"><![CDATA[<p>Do you get stuck in the traffic jam everyday while commuting to work?<br/>
 Would you like to make use of this wasted time? Read on.<br/>
 I usually spend a couple of hours commuting to/from work every day.<br/>
@@ -89,21 +89,21 @@ You can listen to free audio books from any connected device or even burn them o
 
 <p>If the book you&rsquo;re interesting in is not in the public domain, you might find a commercial audio version. Either on CD or a downloadable one, there are a lot of offers out <a href="http://lmgtfy.com/?q=audio+books">there</a>.</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/audio-book.png"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/audio-book.png"></p>
 
 <h3>3. <a href="https://www.ted.com/">Ted Talks</a></h3>
 
 <p>Listen to free talks on a large variety of subjects. Whatever your interest is, there&rsquo;s a chance you find interesting and inspiring talks on the subject.
 Ted app let you download the talks for offline viewing.</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/ted.png"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/ted.png"></p>
 
 <h3>4. Online courses</h3>
 
 <p>If it happens that you&rsquo;re following an online course, you can make use of the commute time to listen to the courses videos. Most of the platforms let you download the videos for offline viewing. Efficiency of this approach will depend on how much you need your eyes on the screen to understand the content.
 What worked for me was listening to the video while commuting, and then reading the slides once back home.</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/moocs.jpg"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/moocs.jpg"></p>
 
 <h3>5. Google Play Books Reader</h3>
 
@@ -111,7 +111,7 @@ What worked for me was listening to the video while commuting, and then reading 
 For this you need to activate the &ldquo;Read aloud&rdquo; option form the top menu.
 It only works with EPUB files, and I recommend activating the &ldquo;High quality voice&rdquo; option for a better listening experience.</p>
 
-<p><img class="center" src="http://bil-t.github.io/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/google-play-books.png"></p>
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-05-5-things-you-can-try-to-get-back-wasted-commute-time/google-play-books.png"></p>
 
 <h2><br></h2>
 
@@ -122,9 +122,9 @@ It only works with EPUB files, and I recommend activating the &ldquo;High qualit
   
   <entry>
     <title type="html"><![CDATA[An Octopress/Vagrant Experiment]]></title>
-    <link href="http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment/"/>
+    <link href="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/"/>
     <updated>2015-05-01T22:52:06+00:00</updated>
-    <id>http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment</id>
+    <id>http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment</id>
     <content type="html"><![CDATA[<p>In my spare time, I like to try and learn new software technologies.
 For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
 

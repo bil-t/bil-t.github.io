@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://bil-t.github.io/sitemap.xml 
+Sitemap: http://bilal.eltayara.net/sitemap.xml 

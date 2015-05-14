@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: software development | Bilal El Tayara]]></title>
-  <link href="http://bil-t.github.io/blog/categories/software-development/atom.xml" rel="self"/>
-  <link href="http://bil-t.github.io/"/>
-  <updated>2015-05-14T20:38:59+00:00</updated>
-  <id>http://bil-t.github.io/</id>
+  <link href="http://bilal.eltayara.net/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://bilal.eltayara.net/"/>
+  <updated>2015-05-14T21:50:22+00:00</updated>
+  <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[3 Things Every Software Development Manager Should Do]]></title>
-    <link href="http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
+    <link href="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
     <updated>2015-05-13T20:07:01+00:00</updated>
-    <id>http://bil-t.github.io/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
+    <id>http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
     <content type="html"><![CDATA[<p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
 
 <!-- more -->

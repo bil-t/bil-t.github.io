@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: vagrant | Bilal El Tayara]]></title>
-  <link href="http://bil-t.github.io/blog/categories/vagrant/atom.xml" rel="self"/>
-  <link href="http://bil-t.github.io/"/>
-  <updated>2015-05-14T20:38:59+00:00</updated>
-  <id>http://bil-t.github.io/</id>
+  <link href="http://bilal.eltayara.net/blog/categories/vagrant/atom.xml" rel="self"/>
+  <link href="http://bilal.eltayara.net/"/>
+  <updated>2015-05-14T21:50:22+00:00</updated>
+  <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[An Octopress/Vagrant Experiment]]></title>
-    <link href="http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment/"/>
+    <link href="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/"/>
     <updated>2015-05-01T22:52:06+00:00</updated>
-    <id>http://bil-t.github.io/blog/2015/05/01/an-octopress-slash-vagrant-experiment</id>
+    <id>http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment</id>
     <content type="html"><![CDATA[<p>In my spare time, I like to try and learn new software technologies.
 For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
 
