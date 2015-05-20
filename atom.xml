@@ -4,7 +4,7 @@
   <title><![CDATA[Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2015-05-14T23:21:41+00:00</updated>
+  <updated>2015-05-20T21:19:33+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,129 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vagrant Powered Perforce]]></title>
+    <link href="http://bilal.eltayara.net/blog/2015/05/20/vagrant-powered-perforce/"/>
+    <updated>2015-05-20T19:48:11+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2015/05/20/vagrant-powered-perforce</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-20-vagrant-powered-perforce/vagrant+perforce.png"></p>
+
+<p>After attending the <a href="https://open.hpi.de/courses/softwareanalytics2015/" title="Automated Visual Software Analytics">Automated Visual Software Analytics </a> online course I had an idea on computing some new metrics deduced from the VCS (<a href="http://en.wikipedia.org/wiki/Revision_control" title="VCS">Version Control System</a>).</p>
+
+<p>Since I want to make use of these metrics at work, my implementation should be
+able to work against a <a href="http://www.perforce.com/" title="Perforce.com">Perforce</a> server, the VCS we mainly use.</p>
+
+<!-- more -->
+
+
+<p>In order to have the appropriate development environment I needed a Linux virtual machine on which Perforce is installed, configured an running properly.
+I had previously used <a href="blog/2015/05/01/an-octopress-slash-vagrant-experiment/" title="An Octopress/Vagrant Experiment">Vagrant</a> to sandbox a development environment, and at that moment I knew it was the beginning of a long-term addiction.</p>
+
+<p>Fortunately for me, Perforce can be downloaded free for up to 20 users.<br/>
+My goal was to configure a virtual machine via Vagrant and provision it by installing a perforce server, running it and make it accessible from the host machine.</p>
+
+<p>Interested ? Here&rsquo;s how to do it.</p>
+
+<h2>1. Port Forwarding: Configuration</h2>
+
+<figure class='code'><figcaption><span> (Vagrantfile)</span> <a href='http://bilal.eltayara.net/downloads/code/2015-05-20-vagrant-powered-perforce/Vagrantfile'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><span class="vg">Vagrant</span><span class="o">.</span><span class="vg">configure</span><span class="p">(</span><span class="il">2</span><span class="p">)</span><span class="w"> </span><span class="vg">do</span><span class="w"> </span><span class="o">|</span><span class="vg">config</span><span class="o">|</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">box</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ubuntu/trusty64&quot;</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">ssh</span><span class="o">.</span><span class="vg">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">2223</span><span class="w">  </span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">ssh</span><span class="o">.</span><span class="vg">forward_agent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">true</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">ssh</span><span class="o">.</span><span class="vg">forward_x11</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">true</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">network</span><span class="w"> </span><span class="s2">&quot;forwarded_port&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">guest:</span><span class="w"> </span><span class="il">1666</span><span class="p">,</span><span class="w"> </span><span class="nl">host:</span><span class="w"> </span><span class="il">1666</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">network</span><span class="w"> </span><span class="o">:</span><span class="vg">forwarded_port</span><span class="p">,</span><span class="w"> </span><span class="nl">guest:</span><span class="w"> </span><span class="il">22</span><span class="p">,</span><span class="w"> </span><span class="nl">host:</span><span class="w"> </span><span class="il">2222</span><span class="p">,</span><span class="w"> </span><span class="nl">id:</span><span class="w"> </span><span class="s2">&quot;ssh&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">disabled:</span><span class="w"> </span><span class="vg">true</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">network</span><span class="w"> </span><span class="o">:</span><span class="vg">forwarded_port</span><span class="p">,</span><span class="w"> </span><span class="nl">guest:</span><span class="w"> </span><span class="il">22</span><span class="p">,</span><span class="w"> </span><span class="nl">host:</span><span class="w"> </span><span class="il">2223</span><span class="p">,</span><span class="w"> </span><span class="nl">auto_correct:</span><span class="w"> </span><span class="vg">true</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">provision</span><span class="w"> </span><span class="s2">&quot;shell&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">path:</span><span class="w"> </span><span class="s2">&quot;vagrant/provision_once.sh&quot;</span>
+</span><span class='line'><span class="w">  </span><span class="vg">config</span><span class="o">.</span><span class="vg">vm</span><span class="o">.</span><span class="vg">provision</span><span class="w"> </span><span class="s2">&quot;shell&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">path:</span><span class="w"> </span><span class="s2">&quot;vagrant/provision_always.sh&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">run:</span><span class="w"> </span><span class="s2">&quot;always&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">privileged:</span><span class="w"> </span><span class="s2">&quot;false&quot;</span>
+</span><span class='line'><span class="vg">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Since I was already using a Vagrant virtual machine I had to pay attention to using a different set of ports.
+The SSH port forwarding is bound, out of the box, to 2222. It was not clear in the documentation how to disable it. After several attempts and some googling I ended up by finding the right way to do it. For it to work you need to add the following two entries in the Vagrant file:</p>
+
+<p><code>config.vm.network :forwarded_port, guest: 22, host: 2222, id: "ssh", disabled: true</code>  <br/>
+<code>config.vm.network :forwarded_port, guest: 22, host: 2223, auto_correct: true</code></p>
+
+<p>Perforce uses by default the port 1666, I chose to use the same port when forwarding it to the host.</p>
+
+<h2>2. Provisioning: Installing and starting Perfoce</h2>
+
+<p>Next I had to install perforce and run it. I was lucky enough to stumble upon an article that revealed to me the existence of a public Perforce FTP server.</p>
+
+<p>Knowing that, I used a first provisioning shell script to download the perforce server binary (p4d) and its command line client (p4).</p>
+
+<figure class='code'><figcaption><span> (provision_once.sh)</span> <a href='http://bilal.eltayara.net/downloads/code/2015-05-20-vagrant-powered-perforce/provision_once.sh'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/bash -x</span>
+</span><span class='line'>apt-get update
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> ! -d <span class="s2">&quot;/usr/local/p4root&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span><span class='line'>  mkdir /usr/local/p4root
+</span><span class='line'>  <span class="nb">cd</span> /usr/local/bin/
+</span><span class='line'>  wget -q ftp://ftp.perforce.com/perforce/r15.1/bin.linux26x86_64/p4d
+</span><span class='line'>  wget -q ftp://ftp.perforce.com/perforce/r15.1/bin.linux26x86_64/p4
+</span><span class='line'>  chmod +x p4d
+</span><span class='line'>  chmod +x p4
+</span><span class='line'>  <span class="nb">echo</span> <span class="s1">&#39;P4PORT=tcp4:127.0.0.1:1666&#39;</span> &gt;&gt; /etc/environment
+</span><span class='line'><span class="k">fi</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A second provisioning script, executed with a non privileged user, starts the Perforce server and does a connection attempt.</p>
+
+<figure class='code'><figcaption><span> (provision_always.sh)</span> <a href='http://bilal.eltayara.net/downloads/code/2015-05-20-vagrant-powered-perforce/provision_always.sh'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/bash -x</span>
+</span><span class='line'><span class="nb">export </span><span class="nv">P4PORT</span><span class="o">=</span>tcp4:127.0.0.1:1666
+</span><span class='line'>sudo p4d -r /usr/local/p4root <span class="p">&amp;</span>
+</span><span class='line'>sleep 3
+</span><span class='line'>p4 info
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This script is configured to run at each restart of the virtual machine to make sure that the Perforce server is always started.</p>
+
+<h2>3. Accessing Perforce from host</h2>
+
+<p>It&rsquo;s worth to note that if the second provisioning script is ran with a privileged user
+the connection from the host was failing. I took me some time to figure out that starting the perforce server with the non privileged user, is the solution. I didn&rsquo;t understand the reason behind it but I was glad it was working.<br/>
+With that in place, the Perforce command line client running on the host machine was able to connect to the Perforce server running on the guest machine with no trouble.</p>
+
+<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-20-vagrant-powered-perforce/p4-client-host.png"></p>
+
+<p>Want to try it ? Fork it from <a href="https://github.com/bil-t/vagrant-perforce-provisioning.git">vagrant-perforce-provisioning</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Invest In Metadata]]></title>
@@ -51,7 +174,7 @@ When Google launched their Gmail I was very happy to discover the labels as a re
 
 <p><img class="center" src="http://bilal.eltayara.net/images/2015-05-14-invest-in-metadata/gmail-labels.jpg"></p>
 
-<p>In the digital photography world, two things happened. On one hand, devices evolved, and adding metadata to the photos became the norm (timestamp, gps coordinates, camera model &hellip;). On the other hand, beside taking into account the photo metadata, it become easy to find a photo management tool with a face recognition feature. Thus, it&rsquo;s possible now to look for photos by combining all these information.</p>
+<p>In the digital photography world, two things happened. On one hand, devices evolved, and adding metadata to the photos became the norm (timestamp, gps coordinates, camera model &hellip;). On the other hand, besides taking into account the photo metadata, it become easy to find a photo management tool with a face recognition feature. Thus, it&rsquo;s possible now to look for photos by combining all these information.</p>
 
 <p><img class="center" src="http://bilal.eltayara.net/images/2015-05-14-invest-in-metadata/picasa-face.jpg"></p>
 
