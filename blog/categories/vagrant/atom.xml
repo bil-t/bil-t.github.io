@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vagrant | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/vagrant/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2015-05-30T12:20:21+00:00</updated>
+  <updated>2015-05-30T12:26:07+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -18,7 +18,7 @@
     <link href="http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/"/>
     <updated>2015-05-30T08:50:16+00:00</updated>
     <id>http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box</id>
-    <content type="html"><![CDATA[<p>I recently wanted to try <a href="http://wordpress.org">Wordpress</a> and explore it features.
+    <content type="html"><![CDATA[<p>I recently wanted to try <a href="http://wordpress.org">Wordpress</a> and explore its features.
 For this I chose to install it an all its dependencies in a Vagrant box.<br/>
 I followed the official <a href="http://codex.wordpress.org/Installing_WordPress">install instructions</a> and automated everything in provisioning shell scripts.</p>
 
