@@ -7,7 +7,7 @@ categories: [vagrant, wordpress]
 ---
 
 
-I recently wanted to try [Wordpress](http://wordpress.org) and explore it features.
+I recently wanted to try [Wordpress](http://wordpress.org) and explore its features.
 For this I chose to install it an all its dependencies in a Vagrant box.  
 I followed the official [install instructions](http://codex.wordpress.org/Installing_WordPress) and automated everything in provisioning shell scripts.  
 
