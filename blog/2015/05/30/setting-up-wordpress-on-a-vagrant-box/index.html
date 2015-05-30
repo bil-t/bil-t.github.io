@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>An Octopress/Vagrant Experiment - Bilal El Tayara</title>
+  <title>Setting up Wordpress on a Vagrant box - Bilal El Tayara</title>
   <meta name="author" content="El Tayara Bilal">
 
   
-  <meta name="description" content="In my spare time, I like to try and learn new software technologies.
-For this I use my Windows laptop. The problem is that after several cycles of &hellip;">
+  <meta name="description" content="I recently wanted to try Wordpress and explore it features.
+For this I chose to install it an all its dependencies in a Vagrant box.
+I followed the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@ For this I use my Windows laptop. The problem is that after several cycles of &h
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/">
+  <link rel="canonical" href="http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,7 +81,7 @@ For this I use my Windows laptop. The problem is that after several cycles of &h
   
   <header>
     
-      <h1 class="entry-title">An Octopress/Vagrant Experiment</h1>
+      <h1 class="entry-title">Setting Up Wordpress on a Vagrant Box</h1>
     
     
       <p class="meta">
@@ -96,61 +97,106 @@ For this I use my Windows laptop. The problem is that after several cycles of &h
   
 
 
-<time datetime="2015-05-01T22:52:06+00:00" pubdate data-updated="true"></time>
+<time datetime="2015-05-30T08:50:16+00:00" pubdate data-updated="true"></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>In my spare time, I like to try and learn new software technologies.
-For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
+<div class="entry-content"><p>I recently wanted to try <a href="http://wordpress.org">Wordpress</a> and explore it features.
+For this I chose to install it an all its dependencies in a Vagrant box.<br/>
+I followed the official <a href="http://codex.wordpress.org/Installing_WordPress">install instructions</a> and automated everything in provisioning shell scripts.</p>
 
-<p>Recently, after struggling with ruby installation on Windows I decided to reconsider Linux. Since I needed windows for other reasons, I decided to try using virtualization. I started by using <a href="https://www.virtualbox.org/">VirtualBox</a> to configure a Linux guest machine. While discussing this with a friend, he suggested trying <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
+<p><img class="center" src="/images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/vagrant+wordpress.png"></p>
 
 <!-- more -->
 
 
-<p>I visited <a href="https://www.vagrantup.com/">Vagrant</a> website and it immediately got my attention for its simplicity. All you need is a configuration file, a small set of commands and the virtual machine is up an running.<br/>
-Playing around with Vagrant tutorial lead me to the idea of creating a sandbox for each software development experiment or project I work on.</p>
+<p>Running <a href="http://wordpress.org">Wordpress</a> requires a web server, php support and a <a href="https://www.mysql.com/">MySQL</a> database.<br/>
+I chose use <a href="http://www.ubuntu.com/">Ubuntu</a> as the box operating system. As a web server I chose to use the <a href="http://httpd.apache.org/">Apache HTTP Server</a>.</p>
 
-<p>I decided to test the idea of this sandbox on my next project: this blog.<br/>
-As many software developers I settled on using <a href="http://octopress.org/">Octopress</a>/<a href="https://github.com/">GitHub</a> for my blog.<br/>
-For this purpose, I needed a Linux machine with the required tools installed and a synced copy of the blog source. After several iteration I got to a stage where I&rsquo;m able to edit the blog from any computer connected to the internet. <br/>
-In three steps I&rsquo;m able to deploy a blog sandbox and start blogging:</p>
+<p>My provisioning strategy consisted of two shell scripts.
+The first script called provision_once.sh is run only upon the box creation, and has privileged user rights. The second script called provision_always.sh is ran each time the box starts with a non privileged user rights.<br/>
+This is specified in the Vagrant configuration file as follows:</p>
 
-<ol>
-<li>First, install required tools: <a href="http://git-scm.com/">git</a>, <a href="https://www.virtualbox.org/">VirtualBox</a> and <a href="https://www.vagrantup.com/">Vagrant</a>.</li>
-<li>Second, clone the blog repository,</li>
-<li>Finally, start the sandbox by switching to its directory and running Vagrant up</li>
-</ol>
+<pre><code>config.vm.provision "shell", path: "vagrant/provision_once.sh"
+config.vm.provision "shell", path: "vagrant/provision_always.sh", run: "always", privileged: "false"  
+</code></pre>
 
+<p>The first part of provision_once.sh script installs required dependencies listed above:</p>
 
-<p>It took me some time to get to a simple and repeatable process.
-I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this post. This experiment showed me the real benefits from using <a href="https://www.vagrantup.com/">Vagrant</a> and I&rsquo;m pretty sure I&rsquo;ll be using it in future projects.</p>
+<pre><code>apt-get -qq -y update
+apt-get -qq -y install apache2
+apt-get -qq -y install php5 
+apt-get -qq -y install php5-mysq  
+</code></pre>
 
-<p>Although this post is not intended to be a tutorial on how to use <a href="https://www.vagrantup.com/">Vagrant</a> or <a href="http://octopress.org/">Octopress</a>, I&rsquo;m going to mention a couple of things I found interesting. I&rsquo;ll also write about some difficulties I encountered and how I solved them.</p>
+<p>After installing the <a href="https://www.mysql.com/">MySQL</a> server, I needed to configure it, and create the required <a href="http://wordpress.org">Wordpress</a> database.<br/>
+To setup the root password for the <a href="https://www.mysql.com/">MySQL</a> server in attended way, one can use debconf-set-selections as shown below. I chose to go with no password as I was setting this up just for test purposes. <br/>
+But this would have been too simple, as I expected the unexpected happened. The installation of the <a href="https://www.mysql.com/">MySQL</a> server didn&rsquo;t go as planned. The <a href="https://www.mysql.com/">MySQL</a> server was failing to start. The failure was only happening upon the box creation, doing manually the same steps was installing the <a href="https://www.mysql.com/">MySQL</a> server correctly.<br/>
+After several attempts the only workaround I found was to perform the installation twice in the provisioning script:</p>
 
-<h3>What I liked most</h3>
+<pre><code>for i in {1..2}  
+do
+    debconf-set-selections &lt;&lt;&lt; 'mysql-server mysql-server/root_password password '  
+    debconf-set-selections &lt;&lt;&lt; 'mysql-server mysql-server/root_password_again password '  
+    apt-get -qq -y install mysql-server  
+done  
+</code></pre>
 
-<ul>
-<li><strong>Easy X11 forwarding over SSH connections</strong> by adding <code>config.ssh.forward_x11 = true</code> to Vagranfile. With <a href="http://mobaxterm.mobatek.net/">MobaXterm</a> running on my Windows host I was able to display the guest.</li>
-<li><strong>Easy port forwarding</strong> by adding <code>config.vm.network "forwarded_port", guest: 4000, host: 4000</code> all traffic network to the port 4000 on the host machine, was actually forwarded to the guest machine on the specified port.</li>
-<li><strong><a href="http://docs.vagrantup.com/v2/synced-folders/">Vagrant synced folder</a></strong> enables editing the files from both the guest and the host.</li>
-</ul>
+<p>Creating the database is rather straight forward using the <a href="https://www.mysql.com/">MySQL</a> command-line tool:</p>
 
+<pre><code>mysql -uroot -e "CREATE DATABASE $DBNAME"
+mysql -uroot -e "GRANT ALL PRIVILEGES ON $DBNAME.* to '$DBUSER'@'localhost' IDENTIFIED BY '$DBPASSWD'"  
+mysql -uroot -e "FLUSH PRIVILEGES"
+</code></pre>
 
-<h3>What took me some time to figure out</h3>
+<p>Next I needed to automate the download and the configuration of the Wordpress instance.<br/>
+The part shown below will download and expand the latest <a href="http://wordpress.org">Wordpress</a> version from the official site.  It&rsquo;ll also configure <a href="http://wordpress.org">Wordpress</a> to use the <a href="https://www.mysql.com/">MySQL</a> database created earlier and generate the required authentication salts.</p>
 
-<ul>
-<li><p><strong>Shell provisioner as <code>vagrant</code> user</strong> and not as root: using <code>privileged false</code> in Vagrantfile didn&rsquo;t work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user <code>su -c "source /vagrant/vagrant/user-config.sh" vagrant</code></p></li>
-<li><p><strong>Blog preview only accessible from guest</strong>, at first I thought it was a problem with port forwarding, but finally, after tedious searches on the internet, I found out that binding the server to 0.0.0.0 in Rakefile was the solution. <br/>
-<code>server_host     = "0.0.0.0"   # server bind address for preview server</code><br/>
-<code>rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")</code></p></li>
-</ul>
+<pre><code>cd /vagrant
+wget -q https://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz 
+rm -f latest.tar.gz
+cd wordpress
+cp wp-config-sample.php wp-config.php   
+sed -i.bak -u "s/database_name_here/$DBNAME/g" wp-config.php
+sed -i.bak -u "s/username_here/$DBUSER/g" wp-config.php
+sed -i.bak -u "s/password_here/$DBPASSWD/g" wp-config.php   
+for i in {1..8}
+do
+    NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1)
+    sed -i.bak -u "0,/put your unique phrase here/s//$NEW_UUID/" wp-config.php      
+done
+</code></pre>
 
+<p>Finally I needed to point the <a href="http://httpd.apache.org/">Apache HTTP Server</a> to the <a href="http://wordpress.org">Wordpress</a> site, this can be achieved as follows:</p>
 
-<p>If you&rsquo;re interessted in trying, the complete configuration is available in the  <a href="https://github.com/bil-t/octopress-vagrant-setup">octopress-vagrant-setup</a> github repository.</p>
+<pre><code>sed -i.bak -u 's,/var/www/html,/vagrant/wordpress,g' /etc/apache2/sites-available/000-default.conf
+
+echo '&lt;Directory /vagrant/wordpress&gt;' &gt;&gt; /etc/apache2/apache2.conf
+echo '  Options Indexes FollowSymLinks' &gt;&gt; /etc/apache2/apache2.conf
+echo '  AllowOverride None' &gt;&gt; /etc/apache2/apache2.conf
+echo '  Require all granted' &gt;&gt; /etc/apache2/apache2.conf
+echo '&lt;/Directory&gt;' &gt;&gt; /etc/apache2/apache2.conf
+
+service apache2 restart
+</code></pre>
+
+<p>The provision always script is simple, it just make sure that the <a href="https://www.mysql.com/">MySQL</a> is up running upon the box start-up.</p>
+
+<pre><code>if [[ ! "$(sudo service mysql status)" =~ "start/running" ]]
+then
+    sudo service mysql start
+fi
+</code></pre>
+
+<p>Finally redirecting the port 80 to the host, makes the <a href="http://wordpress.org">Wordpress</a> instance accessible from the browser, and ready to use.</p>
+
+<p><img class="center" src="/images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/wordpress-install.png"></p>
+
+<p>The complete configuration is available at my <a href="https://github.com/bil-t/wordpress-vagrant">wordpress-vagrant</a> GitHub repository.</p>
 </div>
 
 
@@ -173,12 +219,12 @@ I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this pos
   
 
 
-<time datetime="2015-05-01T22:52:06+00:00" pubdate data-updated="true"></time>
+<time datetime="2015-05-30T08:50:16+00:00" pubdate data-updated="true"></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>
+    <a class='category' href='/blog/categories/vagrant/'>vagrant</a>, <a class='category' href='/blog/categories/wordpress/'>wordpress</a>
   
 </span>
 
@@ -187,7 +233,7 @@ I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this pos
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -198,8 +244,8 @@ I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this pos
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/05/20/vagrant-powered-perforce/" title="Previous Post: Vagrant Powered Perforce">&laquo; Vagrant Powered Perforce</a>
       
-        <a class="basic-alignment right" href="/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time/" title="Next Post: 5 Things You Can Try To Get Back Wasted Commute Time">5 Things You Can Try To Get Back Wasted Commute Time &raquo;</a>
       
     </p>
   </footer>
@@ -324,8 +370,8 @@ I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this pos
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/';
-        var disqus_url = 'http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/';
+        var disqus_identifier = 'http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/';
+        var disqus_url = 'http://bilal.eltayara.net/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/';
         var disqus_script = 'embed.js';
       
     (function () {

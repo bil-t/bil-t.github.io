@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>An Octopress/Vagrant Experiment - Bilal El Tayara</title>
+  <title>Category: wordpress - Bilal El Tayara</title>
   <meta name="author" content="El Tayara Bilal">
 
   
-  <meta name="description" content="In my spare time, I like to try and learn new software technologies.
-For this I use my Windows laptop. The problem is that after several cycles of &hellip;">
+  <meta name="description" content="Category: wordpress">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ For this I use my Windows laptop. The problem is that after several cycles of &h
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/">
+  <link rel="canonical" href="http://bilal.eltayara.net/blog/categories/wordpress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -76,140 +75,36 @@ For this I use my Windows laptop. The problem is that after several cycles of &h
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">An Octopress/Vagrant Experiment</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-05-01T22:52:06+00:00" pubdate data-updated="true"></time>
-        
-      </p>
+    <h1 class="entry-title">Category: Wordpress</h1>
     
   </header>
-
-
-<div class="entry-content"><p>In my spare time, I like to try and learn new software technologies.
-For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
-
-<p>Recently, after struggling with ruby installation on Windows I decided to reconsider Linux. Since I needed windows for other reasons, I decided to try using virtualization. I started by using <a href="https://www.virtualbox.org/">VirtualBox</a> to configure a Linux guest machine. While discussing this with a friend, he suggested trying <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
-
-<!-- more -->
-
-
-<p>I visited <a href="https://www.vagrantup.com/">Vagrant</a> website and it immediately got my attention for its simplicity. All you need is a configuration file, a small set of commands and the virtual machine is up an running.<br/>
-Playing around with Vagrant tutorial lead me to the idea of creating a sandbox for each software development experiment or project I work on.</p>
-
-<p>I decided to test the idea of this sandbox on my next project: this blog.<br/>
-As many software developers I settled on using <a href="http://octopress.org/">Octopress</a>/<a href="https://github.com/">GitHub</a> for my blog.<br/>
-For this purpose, I needed a Linux machine with the required tools installed and a synced copy of the blog source. After several iteration I got to a stage where I&rsquo;m able to edit the blog from any computer connected to the internet. <br/>
-In three steps I&rsquo;m able to deploy a blog sandbox and start blogging:</p>
-
-<ol>
-<li>First, install required tools: <a href="http://git-scm.com/">git</a>, <a href="https://www.virtualbox.org/">VirtualBox</a> and <a href="https://www.vagrantup.com/">Vagrant</a>.</li>
-<li>Second, clone the blog repository,</li>
-<li>Finally, start the sandbox by switching to its directory and running Vagrant up</li>
-</ol>
-
-
-<p>It took me some time to get to a simple and repeatable process.
-I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this post. This experiment showed me the real benefits from using <a href="https://www.vagrantup.com/">Vagrant</a> and I&rsquo;m pretty sure I&rsquo;ll be using it in future projects.</p>
-
-<p>Although this post is not intended to be a tutorial on how to use <a href="https://www.vagrantup.com/">Vagrant</a> or <a href="http://octopress.org/">Octopress</a>, I&rsquo;m going to mention a couple of things I found interesting. I&rsquo;ll also write about some difficulties I encountered and how I solved them.</p>
-
-<h3>What I liked most</h3>
-
-<ul>
-<li><strong>Easy X11 forwarding over SSH connections</strong> by adding <code>config.ssh.forward_x11 = true</code> to Vagranfile. With <a href="http://mobaxterm.mobatek.net/">MobaXterm</a> running on my Windows host I was able to display the guest.</li>
-<li><strong>Easy port forwarding</strong> by adding <code>config.vm.network "forwarded_port", guest: 4000, host: 4000</code> all traffic network to the port 4000 on the host machine, was actually forwarded to the guest machine on the specified port.</li>
-<li><strong><a href="http://docs.vagrantup.com/v2/synced-folders/">Vagrant synced folder</a></strong> enables editing the files from both the guest and the host.</li>
-</ul>
-
-
-<h3>What took me some time to figure out</h3>
-
-<ul>
-<li><p><strong>Shell provisioner as <code>vagrant</code> user</strong> and not as root: using <code>privileged false</code> in Vagrantfile didn&rsquo;t work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user <code>su -c "source /vagrant/vagrant/user-config.sh" vagrant</code></p></li>
-<li><p><strong>Blog preview only accessible from guest</strong>, at first I thought it was a problem with port forwarding, but finally, after tedious searches on the internet, I found out that binding the server to 0.0.0.0 in Rakefile was the solution. <br/>
-<code>server_host     = "0.0.0.0"   # server bind address for preview server</code><br/>
-<code>rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")</code></p></li>
-</ul>
-
-
-<p>If you&rsquo;re interessted in trying, the complete configuration is available in the  <a href="https://github.com/bil-t/octopress-vagrant-setup">octopress-vagrant-setup</a> github repository.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">El Tayara Bilal</span></span>
-
-      
-
-
-
-
-
+  <div id="blog-archives" class="category">
 
 
 
   
+  <h2>2015</h2>
+
+<article>
+  
+<h1><a href="/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/">Setting up Wordpress on a Vagrant box</a></h1>
+<time datetime="2015-05-30T08:50:16+00:00" pubdate><span class='month'>May</span> <span class='day'>30</span> <span class='year'>2015</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/vagrant/'>vagrant</a>, <a class='category' href='/blog/categories/wordpress/'>wordpress</a></span>
+</footer>
 
 
-<time datetime="2015-05-01T22:52:06+00:00" pubdate data-updated="true"></time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/" >Tweet</a>
-  
-  
-  <div class="g-plusone" data-size="medium"></div>
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-      
-        <a class="basic-alignment right" href="/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time/" title="Next Post: 5 Things You Can Try To Get Back Wasted Commute Time">5 Things You Can Try To Get Back Wasted Commute Time &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
+
+  
+</article>
 
 </div>
 
@@ -323,10 +218,7 @@ I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this pos
       var disqus_shortname = 'bilal-el-tayara';
       
         
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/';
-        var disqus_url = 'http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/';
-        var disqus_script = 'embed.js';
+        var disqus_script = 'count.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
