@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>3 Things Every Software Development Manager Should Do - Bilal El Tayara</title>
+  <title>Custom Scrolling With Meteor - Bilal El Tayara</title>
   <meta name="author" content="El Tayara Bilal">
 
   
-  <meta name="description" content="Here are three practices that I found to be of a great help in my day-to-day work as software development manager. Inspection is your friend It&rsquo &hellip;">
+  <meta name="description" content="I&rsquo;ve recently tried using Meteor to build a web application.
+I used Iron.Router to configure the different routes of the web application. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/">
+  <link rel="canonical" href="http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">3 Things Every Software Development Manager Should Do</h1>
+      <h1 class="entry-title">Custom Scrolling With Meteor</h1>
     
     
       <p class="meta">
@@ -95,53 +96,75 @@
   
 
 
-<time datetime="2015-05-13T20:07:01+00:00" pubdate data-updated="true"></time>
+<time datetime="2015-06-21T15:15:41+00:00" pubdate data-updated="true"></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
+<div class="entry-content"><p>I&rsquo;ve recently tried using <a href="https://www.meteor.com/">Meteor</a> to build a web application.<br/>
+I used <a href="https://github.com/iron-meteor/iron-router">Iron.Router</a> to configure the different routes of the web application. Everything worked fine out of the box until I started using links with fragment identifiers.</p>
 
 <!-- more -->
 
 
+<p>First thing I wanted to add was an animated scroll behavior when navigating between anchors on the same page.<br/>
+I was able to achieve this by overriding the <code>scrollToHash-function</code>:</p>
+
+<figure class='code'><figcaption><span> (animated-scroll.js)</span> <a href='/downloads/code/2015-06-21-custom-scrolling-with-meteor/animated-scroll.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">Router</span><span class="p">.</span><span class="nx">_scrollToHash</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">hash</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">section</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">hash</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">section</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">sectionTop</span> <span class="o">=</span> <span class="nx">section</span><span class="p">.</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;html, body&quot;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+</span><span class='line'>            <span class="nx">scrollTop</span><span class="o">:</span> <span class="nx">sectionTop</span>
+</span><span class='line'>        <span class="p">},</span> <span class="s2">&quot;slow&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p></p>
 
-<h2>Inspection is your friend</h2>
+<p>Next I noticed that when scrolling in a page and then navigating to a new one, the scroll remained at its last position.<br/>
+The user experience was not acceptable.  When navigating to a new page, the user expects to land on top of the page and not somewhere in the middle.</p>
 
-<p>It&rsquo;s crucial to know how your code source health is.
-Complex code tend to have a high maintenance cost and makes entry cost higher for a newcomer. Failing to apply best practices and recommendations can result in various bugs. A poor test coverage makes future development very likely to introduce regressions.<br/>
-Static and dynamic analysis are you best friends to give you accurate indicators about your code health. They also help you take appropriate actions to cure the spotted deficiencies.<br/>
-If you don&rsquo;t have this yet in place, all it takes is these simple steps:<br/>
-1. Start by setting up a continuous code analysis process for your source code<br/>
-2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
-3. Every time an issue is fixed, adjust the quality gate accordingly</p>
+<p>To fix this behavior I used the Iron.Router <a href="https://github.com/iron-meteor/iron-router/blob/devel/Guide.md#hooks">hooks</a>.
+I added a global hook that scrolls to the top of the page after the routing.<br/>
+This can be achieved by adding the following code:</p>
 
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
+<figure class='code'><figcaption><span> (scroll-to-top.js)</span> <a href='/downloads/code/2015-06-21-custom-scrolling-with-meteor/scroll-to-top.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">IR_AfterHooks</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">scrollUp</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body,html&#39;</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Router</span><span class="p">.</span><span class="nx">onAfterAction</span><span class="p">(</span><span class="nx">IR_AfterHooks</span><span class="p">.</span><span class="nx">scrollUp</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<h2>Better double-check</h2>
 
-<p>Static and dynamic code analysis can help you track the source code health but when it comes to technical design they are rather limited.<br/>
-When software development manager drifts away from the code because of other duties that require his attention, code review can be a good help.<br/>
-By reviewing the changes regularly the software development manager can stay up to date with the design changes and can intervene at an early stage if needed.
-How to do it? By a continuous automated code review generation process:<br/>
-1. Automatically create a code review for each new change<br/>
-2. Keep the pace, perform the review regularly</p>
+<p></p>
 
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
-
-<h2>Get your hands dirty</h2>
-
-<p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
-My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
-
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
-
-<h2><br></h2>
-
-<p><em>photo credits:</em> <a href="https://www.flickr.com/photos/dumindaxsb/2873528646" title="On Screen Magnification by Duminda Jayasena, sur Flickr">On Screen Magnification</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/jblyberg/3942639156" title="My eyes are starting to hurt by John Blyberg, sur Flickr">My eyes are starting to hurt</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/adulau/5136853276" title="Chris Nickerson at hack.lu 2010 by Alexandre Dulaunoy, sur Flickr">Chris Nickerson at hack.lu 2010</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a></p>
+<p>With these two customizations I was able to have a nice scrolling user experience with my meteor application. <br/>
+What about you, do you have interesting customization to share ?</p>
 </div>
 
 
@@ -164,21 +187,15 @@ My suggestion, make room to code. Besides giving you an accurate idea of the wor
   
 
 
-<time datetime="2015-05-13T20:07:01+00:00" pubdate data-updated="true"></time>
+<time datetime="2015-06-21T15:15:41+00:00" pubdate data-updated="true"></time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/management/'>management</a>, <a class='category' href='/blog/categories/productivity/'>productivity</a>, <a class='category' href='/blog/categories/software-development/'>software development</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -189,10 +206,8 @@ My suggestion, make room to code. Besides giving you an accurate idea of the wor
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2015/05/05/5-things-you-can-try-to-get-back-wasted-commute-time/" title="Previous Post: 5 Things You Can Try To Get Back Wasted Commute Time">&laquo; 5 Things You Can Try To Get Back Wasted Commute Time</a>
+        <a class="basic-alignment left" href="/blog/2015/05/30/setting-up-wordpress-on-a-vagrant-box/" title="Previous Post: Setting up Wordpress on a Vagrant box">&laquo; Setting up Wordpress on a Vagrant box</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2015/05/14/invest-in-metadata/" title="Next Post: Invest In Metadata">Invest In Metadata &raquo;</a>
       
     </p>
   </footer>
@@ -317,8 +332,8 @@ My suggestion, make room to code. Besides giving you an accurate idea of the wor
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/';
-        var disqus_url = 'http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/';
+        var disqus_identifier = 'http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/';
+        var disqus_url = 'http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2015-05-30T12:48:48+00:00</updated>
+  <updated>2015-06-21T16:13:20+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Custom Scrolling With Meteor]]></title>
+    <link href="http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor/"/>
+    <updated>2015-06-21T15:15:41+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2015/06/21/custom-scrolling-with-meteor</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve recently tried using <a href="https://www.meteor.com/">Meteor</a> to build a web application.<br/>
+I used <a href="https://github.com/iron-meteor/iron-router">Iron.Router</a> to configure the different routes of the web application. Everything worked fine out of the box until I started using links with fragment identifiers.</p>
+
+<!-- more -->
+
+
+<p>First thing I wanted to add was an animated scroll behavior when navigating between anchors on the same page.<br/>
+I was able to achieve this by overriding the <code>scrollToHash-function</code>:</p>
+
+<figure class='code'><figcaption><span> (animated-scroll.js)</span> <a href='http://bilal.eltayara.net/downloads/code/2015-06-21-custom-scrolling-with-meteor/animated-scroll.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">Router</span><span class="p">.</span><span class="nx">_scrollToHash</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">hash</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">section</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">hash</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">section</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">sectionTop</span> <span class="o">=</span> <span class="nx">section</span><span class="p">.</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;html, body&quot;</span><span class="p">).</span><span class="nx">animate</span><span class="p">({</span>
+</span><span class='line'>            <span class="nx">scrollTop</span><span class="o">:</span> <span class="nx">sectionTop</span>
+</span><span class='line'>        <span class="p">},</span> <span class="s2">&quot;slow&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Next I noticed that when scrolling in a page and then navigating to a new one, the scroll remained at its last position.<br/>
+The user experience was not acceptable.  When navigating to a new page, the user expects to land on top of the page and not somewhere in the middle.</p>
+
+<p>To fix this behavior I used the Iron.Router <a href="https://github.com/iron-meteor/iron-router/blob/devel/Guide.md#hooks">hooks</a>.
+I added a global hook that scrolls to the top of the page after the routing.<br/>
+This can be achieved by adding the following code:</p>
+
+<figure class='code'><figcaption><span> (scroll-to-top.js)</span> <a href='http://bilal.eltayara.net/downloads/code/2015-06-21-custom-scrolling-with-meteor/scroll-to-top.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">IR_AfterHooks</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">scrollUp</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;body,html&#39;</span><span class="p">).</span><span class="nx">scrollTop</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">Router</span><span class="p">.</span><span class="nx">onAfterAction</span><span class="p">(</span><span class="nx">IR_AfterHooks</span><span class="p">.</span><span class="nx">scrollUp</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>With these two customizations I was able to have a nice scrolling user experience with my meteor application. <br/>
+What about you, do you have interesting customization to share ?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting up Wordpress on a Vagrant box]]></title>
