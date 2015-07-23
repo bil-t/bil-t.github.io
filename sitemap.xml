@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2015/07/23/unlock-full-android-power-to-your-amazon-fire-hd-6/</loc>
+    <lastmod>2015-07-23T21:33:43+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2015/07/13/turn-your-laptop-into-a-wireless-access-point/</loc>
     <lastmod>2015-07-13T19:13:30+00:00</lastmod>
   </url>
@@ -67,5 +71,11 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/tips/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/amazon-fire-hd6/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/android/</loc>
   </url>
 </urlset>
