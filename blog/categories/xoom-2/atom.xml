@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: xoom 2 | Bilal El Tayara]]></title>
+  <link href="http://bilal.eltayara.net/blog/categories/xoom-2/atom.xml" rel="self"/>
+  <link href="http://bilal.eltayara.net/"/>
+  <updated>2015-09-11T22:35:18+00:00</updated>
+  <id>http://bilal.eltayara.net/</id>
+  <author>
+    <name><![CDATA[El Tayara Bilal]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Making Your XOOM 2 Kid Safe]]></title>
+    <link href="http://bilal.eltayara.net/blog/2015/09/11/making-your-xoom-2-kid-safe/"/>
+    <updated>2015-09-11T21:08:35+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2015/09/11/making-your-xoom-2-kid-safe</id>
+    <content type="html"><![CDATA[<p>A couple of years ago I bought the Motorola Xoom 2 for my personal usage.<br/>
+It was my first Android tablet and I mainly planned to use it to make Skype calls, browse the Internet and read some e-books.
+We also used it to play nursery rhyme videos to our last-born.   <br/>
+As he grew, he was convinced that it was &ldquo;his&rdquo; tablet and started to play games on it.<br/>
+It didn&rsquo;t take him long to figure out how to look for YouTube videos or to install new games, this is when troubles started.
+     <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2.png"></p>
+
+<!-- more -->
+
+
+<p>It was clear for us that, unless we wanted to constantly supervise him while using the tablet, we needed a strict parental control.<br/>
+The parental control is not built-in in the Xoom 2, but a lot of options are available in Google Play.<br/>
+Options varies from locking apps, to safe browsers, and screen time management apps.</p>
+
+<p>After trying some different strategies this is what I found most suitable.</p>
+
+<p>I first rooted the tablet in order to install an ad blocker. I chose to do this because most of the free games have pop-up ads.<br/>
+Beside being annoying, they are difficult for kids to skip. Most of the time the lead my kid to some content that I do not approve.</p>
+
+<p>Then I installed <a href="https://play.google.com/store/apps/details?id=com.kiddoware.kidsplace">Kids Place - Parental Control</a> from <a href="https://play.google.com/store/apps/developer?id=kiddoware">kiddoware</a>.  <br/>
+Beside restricting the kids to apps you have approved, Kids Place can be configured to override the &lsquo;home&rsquo; button and to run on tablet boot.<br/>
+Additional plugins such as a safe video player, safe browser and screen time management can be installed too.
+    <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2-Kids-Place.png">
+With this configuration the Xoom 2 became a child safe Android tablet that I was confident to leave in my kid&rsquo;s hands.</p>
+
+<p>If you&rsquo;re interested in rooting your Xoom 2, here&rsquo;s the steps to follow:<br/>
+1. On tablet go to Settings -> Developers Options and enable the Usb Debugging option.      <br/>
+2. On tablet go to Settings -> Security and enable Unknown Sources option. <br/>
+2. Plug your tablet to your PC, check the device manager to make sure the driver is properly installed.<br/>
+If you see a yellow exclamation mark next to the Xoom 2 driver, right-click on it, go to &lsquo;Driver&rsquo; tab, click &lsquo;Update Driver&rsquo;, click &lsquo;Browse my computer &hellip;&rsquo;, click the &lsquo;Let me pick &hellip;&rsquo;<br/>
+From the list choose the &lsquo;Android ADB Composite Driver&rsquo;<br/>
+    <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/adb-driver.png">  <br/>
+3. Download and unzip <a href="https://github.com/bil-t/android-utils/blob/master/Xoom2-IceCreamSandwich-RootFiles.zip?raw=true">Xoom2-IceCreamSandwich-RootFiles</a><br/>
+4. Run DroidRazrRoot404.bat<br/>
+5. Your tablet will reboot and you will have gained root access.</p>
+
+<p>To block ads do the following:<br/>
+1. download and install <a href="https://github.com/bil-t/android-utils/blob/master/AdAway-release_Build-Oct.13.2014.apk?raw=true">AdAway</a> &amp; <a href="https://github.com/bil-t/android-utils/blob/master/adblockplusandroid-1.3.apk?raw=true">AdBlockPlus</a><br/>
+2. Grant both apps root privileges when it&rsquo;s asked for.</p>
+
+<p>Now you&rsquo;re ready to install <a href="https://play.google.com/store/apps/details?id=com.kiddoware.kidsplace">Kids Place - Parental Control</a> and make your tablet safer for kids.</p>
+]]></content>
+  </entry>
+  
+</feed>
