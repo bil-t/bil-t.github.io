@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2015/09/20/agile-retrospectives-using-trello/</loc>
+    <lastmod>2015-09-20T20:31:53+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2015/09/11/making-your-xoom-2-kid-safe/</loc>
     <lastmod>2015-09-11T21:08:35+00:00</lastmod>
   </url>
@@ -84,5 +88,14 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/xoom-2/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/agile/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/retrospective/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/trello/</loc>
   </url>
 </urlset>
