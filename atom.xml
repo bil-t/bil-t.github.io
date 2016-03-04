@@ -4,7 +4,7 @@
   <title><![CDATA[Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-01-26T01:16:47+00:00</updated>
+  <updated>2016-03-04T00:57:58+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why I Don't Like The @author Tags]]></title>
+    <link href="http://bilal.eltayara.net/blog/2016/03/03/why-i-dont-like-the-at-author-tags/"/>
+    <updated>2016-03-03T23:59:53+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2016/03/03/why-i-dont-like-the-at-author-tags</id>
+    <content type="html"><![CDATA[<p>The <a href="https://en.wikipedia.org/wiki/Javadoc">JavaDoc</a> has a <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#@author">@author</a> tag that can be used to assign a programmer at the overview, package and class level.<br/>
+As a software engineer working in a team I never liked this tag.<br/>
+As I became a development manager, my unlikeness increased even more.<br/>
+This feeling is fed by negative impacts on both the &ldquo;<a href="http://www.extremeprogramming.org/rules/collective.html">Collective Ownership</a>&rdquo; and the &ldquo;<a href="https://en.wikipedia.org/wiki/Bus_factor">Bus factor</a>&rdquo;.</p>
+
+<p><img class="center" src="http://bilal.eltayara.net/images/2016-03-03-why-i-dont-like-the-at-author-tags/share.jpg"></p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p><a href="http://www.extremeprogramming.org/rules/collective.html">Collective Ownership</a> is an <a href="https://en.wikipedia.org/wiki/Extreme_programming">Extreme Programming</a> rule that encourages everyone to contribute to all parts of the code.<br/>
+Any developer can change any line of code to add functionality, fix bugs, improve designs or refactor.<br/>
+Collective Ownership mentality is great because every developer feels like he own the code.<br/>
+This drives quality up and fuels the passion that leads to inspiration.<br/>
+I&rsquo;m a strong believer in the benefits of this approach and always encouraging my development teams to adopt it.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Bus_factor">Bus factor</a> is the answer to a simple question: &ldquo;how many people would need to get hit by a bus before this code collapses due to lack of knowledgeable or competent personnel?&rdquo; <br/>
+You want that number to be high.</p>
+
+<p>The <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#@author">@author</a> tag is a signpost telling everyone else to stay away:
+&ldquo;I&rsquo;m the owner, this file belongs to me, no one else should touch it or at best you need to ask for my permission before modifying the code&rdquo;.</p>
+
+<p><img class="center" src="http://bilal.eltayara.net/images/2016-03-03-why-i-dont-like-the-at-author-tags/do-not-touch.jpg"></p>
+
+<p>It creates an single developer ownership mentality of portions of the code driving the bus factor toward one, and thus putting the project at risk.</p>
+
+<p>If you&rsquo;re using the <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#@author">@author</a> tag, I hope I convinced you to stop or at least made you aware of its danger.</p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/opensourceway/5752191166/" title="Improving the speed and quality of research via shared algorithm implementations">Improving the speed and quality of research via shared algorithm implementations</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/luccawithcheese/3467529252/" title="You Don't touch the MOMA">You Don&rsquo;t touch the MOMA</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Is It Realistic To Manage Closely Several Agile Teams]]></title>
