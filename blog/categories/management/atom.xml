@@ -4,7 +4,7 @@
   <title><![CDATA[Category: management | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/management/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-03-04T01:02:19+00:00</updated>
+  <updated>2016-04-30T22:26:41+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,92 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building a Software Development Team]]></title>
+    <link href="http://bilal.eltayara.net/blog/2016/04/30/building-a-software-development-team/"/>
+    <updated>2016-04-30T22:06:14+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2016/04/30/building-a-software-development-team</id>
+    <content type="html"><![CDATA[<p>Trying to build an effective software development team ?
+Here are some key elements that might help you.
+<a href="/images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png"><img class="center" src="/images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png"></a></p>
+
+<!-- more -->
+
+
+<p>Building a Software Development Team</p>
+
+<blockquote><p>SCRUM</p>
+
+<blockquote><p>Provide a SCRUM training for the team</p>
+
+<p>Convince all team members take the lead in a round robin fashion on the scrum ceremonies facilitation (Sprint Review &amp; Planning, Retrospectives &hellip;)</p>
+
+<p>Define the DoR : Definition of Ready</p>
+
+<blockquote><p>Clear Acceptance test<br/>
+Shared minimal design</p></blockquote>
+
+<p>Define the DoD : Definition of Done</p>
+
+<blockquote><p>Build pipeline is green<br/>
+Minimal documentation</p></blockquote>
+
+<p>Regular Backlog Grooming<br/>
+Poker Estimation</p>
+
+<blockquote><p>Story point as time unit is not allowed</p></blockquote></blockquote>
+
+<p>Ops</p>
+
+<blockquote><p>Configure a continuous integration pipline</p>
+
+<blockquote><p>Build (includes unit tests)<br/>
+Code Inspection<br/>
+Integration Tests<br/>
+Performance Tests<br/>
+Automate Tests</p></blockquote>
+
+<p>Define Quality Gates</p>
+
+<p>Build Pipline Monitor</p></blockquote>
+
+<p>Code</p>
+
+<blockquote><p>TDD / Test First</p>
+
+<p>Clean Code</p>
+
+<blockquote><p>Simple Design</p>
+
+<blockquote><p>First make it work, then make it simple, only then make it fast<br/>
+KISS<br/>
+YAGNI<br/>
+SOLID<br/>
+Modular</p></blockquote>
+
+<p>Understandable code</p>
+
+<blockquote><p>Clear Naming<br/>
+Comment Unclear Parts of Code<br/>
+Self-documenting Code<br/>
+Cohesive Methods and Classes</p></blockquote>
+
+<p>Follow the Boy Scout Rule Leave your code better than you found it</p></blockquote></blockquote>
+
+<p>Team Work</p>
+
+<blockquote><p>Define Work Agreements</p>
+
+<p>Collective Code Ownership</p>
+
+<blockquote><p>Define Team Coding Conventions</p></blockquote>
+
+<p>Continuous Improvement Culture</p>
+
+<blockquote><p>Improvement and exploration tasks are part of the sprint backlog</p></blockquote></blockquote></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Is It Realistic To Manage Closely Several Agile Teams]]></title>

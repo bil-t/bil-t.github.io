@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2016/04/30/building-a-software-development-team/</loc>
+    <lastmod>2016-04-30T22:06:14+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2016/03/03/why-i-dont-like-the-at-author-tags/</loc>
     <lastmod>2016-03-03T23:59:53+00:00</lastmod>
   </url>
@@ -113,8 +117,5 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/trello/</loc>
-  </url>
-  <url>
-    <loc>http://bilal.eltayara.net/posts/2/</loc>
   </url>
 </urlset>
