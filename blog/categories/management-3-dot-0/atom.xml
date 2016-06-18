@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: retrospective | Bilal El Tayara]]></title>
-  <link href="http://bilal.eltayara.net/blog/categories/retrospective/atom.xml" rel="self"/>
+  <title><![CDATA[Category: management 3.0 | Bilal El Tayara]]></title>
+  <link href="http://bilal.eltayara.net/blog/categories/management-3-dot-0/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
   <updated>2016-06-18T11:14:53+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
@@ -79,40 +79,6 @@ The main course is where most of the work happen, and it goes like this. It star
 
 <p><em>photo credits:</em> <br/>
 <a href="https://www.flickr.com/photos/thesaleswhisperer/14188549988/" title="problems solutions entrepreneurship">problems solutions entrepreneurship</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,<a href="https://www.flickr.com/photos/jogibaer2/5459043426/" title="Post-It">Post-It</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Agile Retrospectives Using Trello]]></title>
-    <link href="http://bilal.eltayara.net/blog/2015/09/20/agile-retrospectives-using-trello/"/>
-    <updated>2015-09-20T20:31:53+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2015/09/20/agile-retrospectives-using-trello</id>
-    <content type="html"><![CDATA[<p>As a distributed agile team working from Paris and Beirut, remote retrospectives are part of our rituals.<br/>
-To conduct these remote retrospectives, we have settled on using <a href="https://trello.com/">Trello</a>. <br/>
-My colleague <a href="http://philippe.bourgau.net/">BOURGAU Philippe</a> has <a href="http://philippe.bourgau.net/trellospectives-remote-retrospectives-with-trello/">blogged on what we tried</a> and how we ended up by opting for Trello.<br/>
-Since then we have made some improvements on speeding up the meeting preparation, and I think it&rsquo;s time to share them.
-<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/trello.png"></p>
-
-<!-- more -->
-
-
-<p>As you might know, retrospectives activities are recurrent, it&rsquo;s not unlikely to redo the same activity a couple of retrospectives later.<br/>
-So it was natural for us to start creating boards to be used as templates for the activities. <br/>
-These boards served as a starting point when setting up a session and were improved continuously. <br/>
-So how is this used practically ?<br/>
-<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png">
-In our case, a facilitator is responsible of preparing and animating each session. <br/>
-When preparing the session, instead of creating each activity board from scratch, the facilitator had now a catalog in which he could choose the activities. <br/>
-All he had to do is to copy the board, give him a specific name and share it with the team. <br/>
-Each board contains a short description of the activity, and a suitable setup to conduct it.<br/>
-In reality the facilitator still created boards from scratch, but only when no template was available.<br/>
-But now, instead of doing it only for his session, he took the time to first create a template and then copy it into his session. <br/>
-This way he would have contributed to the enrichment of the catalog and facilitated the preparation of upcoming sessions. <br/>
-We&rsquo;ve been doing this for quite some time and I think it&rsquo;s worth to share it with the agile community. <br/>
-We&rsquo;ve learned a lot form others&#8217; experiments and it&rsquo;s time for us to contribute back with what we experimented.  <br/>
-I&rsquo;ve started publishing some of the templates I made to the <a href="https://trello.com/agileretrospectives">Agile Retrospectives</a> space, it&rsquo;s a public Trello team.
-As I&rsquo;m writing this post, there are six published templates. I&rsquo;ll soon be asking other contributors on the team to share their work too, so stay tuned for more templates. <br/>
-I hope you will find this useful for your retrospectives, and if you do use a template and have any improvement to make, don&rsquo;t hesitate to join the <a href="https://trello.com/agileretrospectives">team</a>.</p>
 ]]></content>
   </entry>
   
