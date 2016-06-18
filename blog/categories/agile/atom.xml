@@ -4,7 +4,7 @@
   <title><![CDATA[Category: agile | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/agile/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-06-18T11:14:53+00:00</updated>
+  <updated>2016-06-18T11:22:24+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -18,12 +18,12 @@
     <link href="http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective/"/>
     <updated>2016-06-18T08:03:51+00:00</updated>
     <id>http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective</id>
-    <content type="html"><![CDATA[<p>When attending to a <a href="https://management30.com/events/two-day-course/">2-day course on Management 3.0</a>, about the new things I discovered was the &ldquo;solution focus&rdquo; approach to improving things. Googling on the matter I learned that this technique come from the <a href="https://en.wikipedia.org/wiki/Solution_focused_brief_therapy">&ldquo;Solution focused brief therapy&rdquo;</a>.</p>
+    <content type="html"><![CDATA[<p>While attending to a <a href="https://management30.com/events/two-day-course/">2-day course on Management 3.0</a>, on of the new things I discovered was the &ldquo;solution focus&rdquo; approach to improving things. Googling on the matter I learned that this technique come from the <a href="https://en.wikipedia.org/wiki/Solution_focused_brief_therapy">&ldquo;Solution focused brief therapy&rdquo;</a>.</p>
 
 <p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg"></p>
 
 <p>In a solution focused brief therapy (SFBT) the patient is asked to focus on solution-building rather than problem-solving. This can be achieved by exploring current resources and future hopes rather than present problems and past causes. <br/>
-First thing that popped to my mind when I learned about SFBT, is its similarity to an agile retrospective.<br/>
+First thing that popped to my mind when discovering SFBT, is its similarity to an agile retrospective.<br/>
 Retrospective main aim is to spot improvement opportunities and come up with actions to make things better in the future.</p>
 
 <p>I&rsquo;ve been conducting and participating to retrospectives for several years now, but unlike SFBT, we were often digging to identify the root-cause of problems and then trying to figure out solutions.<br/>
@@ -37,37 +37,38 @@ SFBT opened a new perspective for me. Finding the root-cause in a retrospective 
 <p>When conducting retrospective I like to follow the structure proposed in <a href="https://www.youtube.com/watch?v=w8w-dFrmovQ">&ldquo;Agile Retrospectives: Making Good Teams Great&rdquo;</a> by Esther Derby and Diana Larsen. I always structure my retrospective accordingly.</p>
 
 <p>I start by a <strong><em>set the stage</em></strong> activity to break the ice, and a <strong><em>closing</em></strong> activity to share appreciations or get feedback. You can compare these to a starter and a desert in 3-courses menu.<br/>
-The main course is where most of the work happen, and it goes like this. It starts with an activity to <strong><em>gather data</em></strong> regarding the last iteration from the participants followed by an activity enabling <strong><em>insights generation </em></strong> leading the team to <strong><em>deciding what to do</em></strong>.</p>
+The main course is where most of the work happen, and it goes like this.<br/>
+It starts with an activity to <strong><em>gather data</em></strong> regarding the last iteration from the participants followed by an activity enabling <strong><em>insights generation</em></strong> leading the team to <strong><em>deciding what to do</em></strong>.</p>
 
-<p>The <strong><em>generate insight</em></strong> activity is usually where the team look at the problem, brainstorm to identify the root. Classical activities that can be used are 5-whys analysis, fishbone, etc. It&rsquo;s then followed by an activity to identify the actions like SMART goals, Short subjects, etc.</p>
+<p>The <strong><em>generate insight</em></strong> activity is usually where the team look at the problem, brainstorm to identify the root. Classical activities that can be used are 5-whys analysis, fishbone, etc. It&rsquo;s then followed by an activity to identify the actions and <strong><em>decide what to do</em></strong> like SMART goals, Short subjects, etc.</p>
 
-<p>In a &ldquo;solution focused&rdquo; retrospective both activities can be replaced by a single solution oriented activity conducted as follow:</p>
+<p>In a <strong>solution focused</strong> retrospective both activities can be replaced by a single solution oriented activity conducted as follow:</p>
 
-<p>Assuming that the team identified themes to work on, divide the participants in groups of 3 or 4, each group takes a theme to work on. In some cases it might possible for the group to work on all the themes.</p>
+<p>Assuming that the team did a <strong><em>gather data</em></strong> activity and identified themes to work on, divide the participants in groups of 3 or 4, each group takes a theme to work on. In some cases it might possible for the group to work on all the themes.</p>
 
 <p>Ask the group to consider the following two questions:</p>
 
 <ul>
-<li><em>Regarding the chosen theme, on a scale from 1 to 10 where do you think we are today?</em></li>
+<li><strong>Regarding the chosen theme, on a scale from 1 to 10 where do you think we are today?</strong></li>
 </ul>
 
 
 <p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png"></p>
 
 <ul>
-<li><em>What action cans be done in the next iteration accomplish a +1 improvement?</em></li>
+<li><strong>What action cans be done in the next iteration accomplish a +1 improvement?</strong></li>
 </ul>
 
 
 <p>Then ask the group to work 4 small iterations, each one of 6 minutes as follows:</p>
 
-<p>Iteration 1 - On your own, self brain dumping / Silence / Post&#8217;it.</p>
+<p>Iteration 1 - <strong>On your own, self brain dumping / Silence / Post&#8217;it.</strong></p>
 
-<p>Iteration 2 - Together, Share.</p>
+<p>Iteration 2 - <strong>Together, Share.</strong></p>
 
-<p>Iteration 3 - Aggregate &amp; Consolidate.</p>
+<p>Iteration 3 - <strong>Aggregate &amp; Consolidate.</strong></p>
 
-<p>Iteration 4 - finalize &amp; prepare a 1&#8217;30 pitch to share with the other groups.</p>
+<p>Iteration 4 - <strong>Finalize &amp; prepare a 1&#8217;30 pitch to share with the other groups.</strong></p>
 
 <p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg"></p>
 
