@@ -4,7 +4,7 @@
   <title><![CDATA[Category: wifi | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/wifi/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-11-05T20:44:19+00:00</updated>
+  <updated>2016-12-17T16:12:29+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -48,18 +48,18 @@ Searching the web I was able to find out how to achieve this by using the Micros
 
 <p>Replace your_wifi_name by the name of your network and &lsquo;your_wifi_password&rsquo; by the password you want users to connect with.</p>
 
-<p><img class="center" src="/images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/cmd-1.png"></p>
+<p>{% img center /images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/cmd-1.png %}</p>
 
 <p>Then type the following command to start the hosted network:</p>
 
 <p><code>netsh wlan start hostednetwork</code></p>
 
-<p><img class="center" src="/images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/cmd-2.png"></p>
+<p>{% img center /images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/cmd-2.png %}</p>
 
 <p>Now all is left to do is to enable the internet sharing for this you need to got to &lsquo;Control Panel\All Control Panel Items\Network and Sharing Center&rsquo; right click the newly created virtual wifi adapter, choose properties, click on the sharing tab, click the first check box and choose the appropriate networking connection:</p>
 
-<p><img class="center" src="/images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/settings-1.png"><br/>
-<img class="center" src="/images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/settings-2.png"></p>
+<p>{% img center /images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/settings-1.png %}<br/>
+{% img center /images/2015-07-13-turn-your-laptop-into-a-wireless-access-point/settings-2.png %}</p>
 
 <p>To check the status of your hosted network use the command:</p>
 

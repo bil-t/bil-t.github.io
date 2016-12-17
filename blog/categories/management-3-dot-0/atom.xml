@@ -4,7 +4,7 @@
   <title><![CDATA[Category: management 3.0 | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/management-3-dot-0/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-11-05T20:44:19+00:00</updated>
+  <updated>2016-12-17T16:12:29+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -20,7 +20,7 @@
     <id>http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective</id>
     <content type="html"><![CDATA[<p>While attending to a <a href="https://management30.com/events/two-day-course/">2-day course on Management 3.0</a>, on of the new things I discovered was the &ldquo;solution focus&rdquo; approach to improving things. Googling on the matter I learned that this technique come from the <a href="https://en.wikipedia.org/wiki/Solution_focused_brief_therapy">&ldquo;Solution focused brief therapy&rdquo;</a>.</p>
 
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg"></p>
+<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg %}</p>
 
 <p>In a solution focused brief therapy (SFBT) the patient is asked to focus on solution-building rather than problem-solving. This can be achieved by exploring current resources and future hopes rather than present problems and past causes. <br/>
 First thing that popped to my mind when discovering SFBT, is its similarity to an agile retrospective.<br/>
@@ -53,7 +53,7 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 </ul>
 
 
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png"></p>
+<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png %}</p>
 
 <ul>
 <li><strong>What action cans be done in the next iteration accomplish a +1 improvement?</strong></li>
@@ -70,7 +70,7 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 
 <p>Iteration 4 - <strong>Finalize &amp; prepare a 1&#8217;30 pitch to share with the other groups.</strong></p>
 
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg"></p>
+<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg %}</p>
 
 <p>I usually remind the groups to make us of the SMART goals approach when deciding on the actions for the next iteration.</p>
 

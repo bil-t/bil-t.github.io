@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2016/12/17/why-developers-need-t-shaped-skills/</loc>
+    <lastmod>2016-12-17T15:13:48+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2016/11/05/working-agreements/</loc>
     <lastmod>2016-11-05T19:57:29+00:00</lastmod>
   </url>
@@ -132,5 +136,8 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/management-3-dot-0/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/posts/2/</loc>
   </url>
 </urlset>

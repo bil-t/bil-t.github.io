@@ -4,7 +4,7 @@
   <title><![CDATA[Category: wordpress | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/wordpress/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-11-05T20:44:19+00:00</updated>
+  <updated>2016-12-17T16:12:29+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -22,7 +22,7 @@
 For this I chose to install it an all its dependencies in a Vagrant box.<br/>
 I followed the official <a href="http://codex.wordpress.org/Installing_WordPress">install instructions</a> and automated everything in provisioning shell scripts.</p>
 
-<p><img class="center" src="/images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/vagrant+wordpress.png"></p>
+<p>{% img center /images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/vagrant+wordpress.png %}</p>
 
 <!-- more -->
 
@@ -108,7 +108,7 @@ fi
 
 <p>Finally redirecting the port 80 to the host, makes the <a href="http://wordpress.org">Wordpress</a> instance accessible from the browser, and ready to use.</p>
 
-<p><img class="center" src="/images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/wordpress-install.png"></p>
+<p>{% img center /images/2015-05-30-setting-up-wordpress-on-a-vagrant-box/wordpress-install.png %}</p>
 
 <p>The complete configuration is available at my <a href="https://github.com/bil-t/wordpress-vagrant">wordpress-vagrant</a> GitHub repository.</p>
 ]]></content>

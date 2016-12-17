@@ -4,7 +4,7 @@
   <title><![CDATA[Category: productivity | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/productivity/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-11-05T20:44:19+00:00</updated>
+  <updated>2016-12-17T16:12:29+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -20,7 +20,7 @@
     <id>http://bilal.eltayara.net/blog/2016/04/30/building-a-software-development-team</id>
     <content type="html"><![CDATA[<p>Trying to build an effective software development team ?
 Here are some key elements that might help you.
-<a href="/images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png"><img class="center" src="/images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png"></a></p>
+<a href="/images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png">{% img center /images/2016-04-30-building-a-software-development-team/Building_a_Software_Development_Team.png %}</a></p>
 
 <!-- more -->
 
@@ -113,7 +113,7 @@ Some of the new teams were already trying to follow the agile practices, some we
 So naturally I found myself driving the teams to adopt the SCRUM framework.
 I made sure to share with them my return on experience and to point out the pitfalls and the small details that can make a difference.</p>
 
-<p><img class="center" src="/images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/scrum.png"></p>
+<p>{% img center /images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/scrum.png %}</p>
 
 <p>Fortunately for me the resistance to change was less than expected. <br/>
 All the teams were eager to try the new framework and to improve their agile practices.    <br/>
@@ -141,7 +141,7 @@ But what I also know, is that it took me nearly two years of practice to be able
 <p>But till now I haven’t managed to keep a regular pace to assist closely all the teams in this adoption process and this doesn’t make me feel satisfied. With all the responsibilities I have to assume I never get the time needed to accompany the teams in all of their agile ceremonies.<br/>
 Since a couple of days I’ve been asking myself, assuming I had nothing else to do, is it possible to do such a close follow up? That’s when I decide to do the math.</p>
 
-<p><img class="center" src="/images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/calculator.jpg"></p>
+<p>{% img center /images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/calculator.jpg %}</p>
 
 <p>For one team, per iteration of two weeks, I will need to allocate:    <br/>
 - 3 hours for the demo/sprint planning   <br/>
@@ -164,7 +164,7 @@ Second action is to skip attending the daily standups, this will let me gain bac
 
 <p>Interested in the outcome? Stay tuned.</p>
 
-<p><img class="center" src="/images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/scrum-glasses.jpg"></p>
+<p>{% img center /images/2016-01-26-is-it-realistic-to-manage-closely-several-agile-teams/scrum-glasses.jpg %}</p>
 
 <h2><br></h2>
 
@@ -182,7 +182,7 @@ Second action is to skip attending the daily standups, this will let me gain bac
 And as a good friend of mine would say, like everything there are always two sides. <br/>
 In what I experienced I encountered a good one and a bad one (and no there&rsquo;s no <a href="http://www.imdb.com/title/tt0060196/">ugly</a> one, at least not yet).</p>
 
-<p><img class="center" src="/images/2015-10-19-beating-the-meeting-run/time.png"></p>
+<p>{% img center /images/2015-10-19-beating-the-meeting-run/time.png %}</p>
 
 <!-- more -->
 
@@ -203,7 +203,7 @@ The same pattern occurred the whole week, and I started getting calls from peopl
 Fortunately a little voice in my head was whispering &ldquo;no, no, no&rdquo; and when I paid attention I heard it say &ldquo;&hellip; <a href="https://en.wikipedia.org/wiki/Broken_windows_theory">broken window theory</a> &hellip; <a href="https://en.wikibooks.org/wiki/Professionalism/Diane_Vaughan_and_the_normalization_of_deviance">normalization of deviance</a> &hellip;&rdquo;. <br/>
 And it just hit me, it was clear to me that I was slipping into these anti-patterns.</p>
 
-<p><img class="center" src="/images/2015-10-19-beating-the-meeting-run/broken-window.png"></p>
+<p>{% img center /images/2015-10-19-beating-the-meeting-run/broken-window.png %}</p>
 
 <p>Accepting being late to meeting is a clear illustration of &ldquo;Diane Vaughan&rsquo;s normalization of deviance&rdquo;.</p>
 
@@ -220,7 +220,7 @@ But how to enforce that, you might think about developing an outlook extension f
 That was really compelling for the software engineer in me, but for the pragmatic developer it looked complex and too much, it also required everybody to be aligned with the rules when booking meetings.  <br/>
 I needed something that I can achieve on my own, where I have full control to apply it, something that would be simple.</p>
 
-<p><img class="center" src="/images/2015-10-19-beating-the-meeting-run/punctuality.png"></p>
+<p>{% img center /images/2015-10-19-beating-the-meeting-run/punctuality.png %}</p>
 
 <p>Suddenly it all became clear. The solution is simple, do like the <a href="https://www.bitcoinmining.com/">Bitcoin miner</a>. A Bitcoin miner will keep a small fee for himself when validating a transaction.<br/>
 All I have to do is the same, I&rsquo;ll just apply a tax to the meeting time and take 5 minutes for me.<br/>
@@ -247,7 +247,7 @@ His prime motivation was the difficulty to track what was published, who publish
 Thus he was investing in building a directory for the wiki, by providing categorized links to the pages of interest.<br/>
 Seeing this, I couldn&rsquo;t agree less.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/directory.png"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/directory.png %}</p>
 
 <!-- more -->
 
@@ -256,7 +256,7 @@ Seeing this, I couldn&rsquo;t agree less.</p>
 I was as well facing the same problem when trying to look for information in our wiki and persuaded that there is room for improvement.<br/>
 Publishing a classified directory of shortcuts was definitely not the right answer. For me, the simple proof resides in the problem statement itself: if we aren&rsquo;t able to track the information how will we be able to maintain an up to date directory? Any human-edited directory is obsolete by design.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/obsolete-book.jpg"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/obsolete-book.jpg %}</p>
 
 <p>Looking back at the evolution of the search engines, one can see how things evolved from static directories to dynamic queries with real-time suggestions.
 This also confirms that using static directories is not the right answer.
@@ -267,22 +267,22 @@ Easy, for e-mails I used folders in my in-box and for photos it was folders on m
 Easy but not free, I had to invest some time to classify the initial stock. For emails automated rules are of great help, for photos it was rather manual (Disclaimer: being a programmer I had scripted the photos&#8217; classification).<br/>
 When done, I was rather happy, my data was organized, now I can find what I&rsquo;m looking for easily.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/photos-directory-tree.jpg"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/photos-directory-tree.jpg %}</p>
 
 <p>Alas, the success was ephemeral. Sometimes I needed to classify an e-mail in several categories. Some other times I needed to find the photos of one of my children for a certain month. My static classification failed me and it wasn&rsquo;t a surprise.
 Fortunately for me things had evolved in my favor.
 When Google launched their Gmail I was very happy to discover the labels as a replacement of folders. I can tag a mail with one or several labels. Labels can be used as search criteria. Labels were the real answer to my need that I had worked around it using folders. With labels I was able to enrich my e-mails with searchable metadata.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/gmail-labels.jpg"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/gmail-labels.jpg %}</p>
 
 <p>In the digital photography world, two things happened. On one hand, devices evolved, and adding metadata to the photos became the norm (timestamp, gps coordinates, camera model &hellip;). On the other hand, besides taking into account the photo metadata, it become easy to find a photo management tool with a face recognition feature. Thus, it&rsquo;s possible now to look for photos by combining all these information.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/picasa-face.jpg"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/picasa-face.jpg %}</p>
 
 <p>Taking a step back and looking again at all the cited examples, I can say that it&rsquo;s all about metadata. It&rsquo;s about adding &ldquo;data about the data&rdquo; and making it available for your tools. By exploiting the metadata, tools can offer not only unlimited alternate views, but also slice and dice capabilities.   <br/>
 Getting back to our internal wiki problem statement, if you ask me how to solve it, my answer would be to use &ldquo;Semantic Web&rdquo; techniques to enrich the content with metadata, and provide a search engine that can exploit these metadata.</p>
 
-<p><img class="center" src="/images/2015-05-14-invest-in-metadata/metadata.jpg"></p>
+<p>{% img center /images/2015-05-14-invest-in-metadata/metadata.jpg %}</p>
 
 <h2><br></h2>
 
@@ -312,7 +312,7 @@ If you don&rsquo;t have this yet in place, all it takes is these simple steps:<b
 2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
 3. Every time an issue is fixed, adjust the quality gate accordingly</p>
 
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
+<p>{% img center /images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg %}</p>
 
 <h2>Better double-check</h2>
 
@@ -323,14 +323,14 @@ How to do it? By a continuous automated code review generation process:<br/>
 1. Automatically create a code review for each new change<br/>
 2. Keep the pace, perform the review regularly</p>
 
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
+<p>{% img center /images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg %}</p>
 
 <h2>Get your hands dirty</h2>
 
 <p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
 My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
 
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
+<p>{% img center /images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg %}</p>
 
 <h2><br></h2>
 
