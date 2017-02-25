@@ -4,7 +4,7 @@
   <title><![CDATA[Category: trello | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/trello/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-12-17T16:12:29+00:00</updated>
+  <updated>2017-02-25T21:13:00+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -22,7 +22,7 @@
 To conduct these remote retrospectives, we have settled on using <a href="https://trello.com/">Trello</a>. <br/>
 My colleague <a href="http://philippe.bourgau.net/">BOURGAU Philippe</a> has <a href="http://philippe.bourgau.net/trellospectives-remote-retrospectives-with-trello/">blogged on what we tried</a> and how we ended up by opting for Trello.<br/>
 Since then we have made some improvements on speeding up the meeting preparation, and I think it&rsquo;s time to share them.
-{% img center /images/2015-09-20-agile-retrospectives-using-trello/trello.png %}</p>
+<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/trello.png"></p>
 
 <!-- more -->
 
@@ -31,7 +31,7 @@ Since then we have made some improvements on speeding up the meeting preparation
 So it was natural for us to start creating boards to be used as templates for the activities. <br/>
 These boards served as a starting point when setting up a session and were improved continuously. <br/>
 So how is this used practically ?<br/>
-{% img center /images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png %}
+<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png">
 In our case, a facilitator is responsible of preparing and animating each session. <br/>
 When preparing the session, instead of creating each activity board from scratch, the facilitator had now a catalog in which he could choose the activities. <br/>
 All he had to do is to copy the board, give him a specific name and share it with the team. <br/>

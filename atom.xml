@@ -4,7 +4,7 @@
   <title><![CDATA[Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-12-17T16:11:34+00:00</updated>
+  <updated>2017-02-25T21:13:00+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Managing Agile Autonomous Teams : A Paradox ?]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/02/25/managing-agile-autonomous-teams-a-paradox/"/>
+    <updated>2017-02-25T18:31:50+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/02/25/managing-agile-autonomous-teams-a-paradox</id>
+    <content type="html"><![CDATA[<p>Agile teams are known to be autonomous and self-organizing.  <br/>
+When I started fostering agility and encouraging autonomy and self-organization for the teams I work with, It was only normal to to face a situation where teams decided to do things their way, under the name of autonomy and self-organization. <br/>
+The problem was that the direction they were heading in was not going to lead to the collective success of the enterprise.<br/>
+My role was to help them succeed, thus I had the challenge of directing them while helping them improve their agility and thus their autonomy and self organization.<br/>
+Is that an impossible equation to solve ?</p>
+
+<!-- more -->
+
+
+<p>If you&rsquo;re new to agility you might think that this a proof that agility fails in an enterprise context and is only meant for a small team.<br/>
+Fortunately it&rsquo;s not the case, agility, when well understood and applied, works at scale and delivers its promises.<br/>
+Autonomy of agile teams is a must but it&rsquo;s not sufficient, along that, teams in an enterprise context need alignment.
+Autonomy without alignment will only lead to anarchy, and this is something you don&rsquo;t want. Anarchy rarely leads to success.  <br/>
+Only when both alignment and autonomy are present, agile teams can become successful.</p>
+
+<p>This is greatly illustrated by <a href="http://blog.crisp.se/author/henrikkniberg">Henrik Kniberg</a> in the “<a href="http://blog.crisp.se/2014/03/27/henrikkniberg/spotify-engineering-culture-part-1">Spotify Engineering Culture</a>” and several of this talks.</p>
+
+<p><a href="http://bilal.eltayara.net/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/autonomy-alignment-kniberg.png"><img class="center" src="http://bilal.eltayara.net/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/autonomy-alignment-kniberg.png"></a></p>
+
+<blockquote><ul>
+<li>Down here is low alignment and low autonomy. Micromanagement Culture, no high level purpose just shut up and follow orders.</li>
+<li>Up here is high Alignment, but low autonomy. So leaders are good communicating what problems needs to be solved, but also they are telling people how to solve it.</li>
+<li>High Alignment and High Autonomy means leaders focus on what problems to solve but let the teams figure out how to solve it</li>
+<li>What about down here then? Low alignment and high autonomy. Means teams do whatever they want…</li>
+</ul>
+</blockquote>
+
+<p>But how do teams get alignment ?</p>
+
+<p>As alignment aim to make several teams work toward the same goals, it&rsquo;s by design an external factor to the teams.<br/>
+Thus the teams can&rsquo;t achieve alignment on their own.<br/>
+Agile managers are still an important piece of the puzzle, and fit naturally in the agile context.   <br/>
+By helping teams getting alignment, they provide them with one of the necessary ingredients for their success.</p>
+
+<p><a href="http://bilal.eltayara.net/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/velib.jpg"><img class="center" src="http://bilal.eltayara.net/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/velib.jpg"></a></p>
+
+<p>I work in a fast-paced and constantly changing work environment, with geographically dispersed and culturally diverse teams, reaching alignment in such context is not an easy task. <br/>
+As an agile manager I need to constantly drive alignment, in order to allow autonomy to build. It&rsquo;s about keeping the people and the work progressing in the correct direction toward to the goals, and it&rsquo;s not to be confused by staying &ldquo;on plan&rdquo;.<br/>
+To accomplish this I practice consistently communicated, measurable, incremental goals. In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/44904381@N03/4424536847/" title="Vélib 2">Vélib 2</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why Developers Need T-shaped Skills]]></title>
@@ -1329,62 +1381,6 @@ It only works with EPUB files, and I recommend activating the &ldquo;High qualit
 
 <p><em>photo credits:</em> <a href="http://www.flickr.com/photos/74109564@N08/8119732223">Audiobook_logo_small</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
 <a href="https://www.flickr.com/photos/93112746@N05/11059505474">So many MOOCs</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[An Octopress/Vagrant Experiment]]></title>
-    <link href="http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment/"/>
-    <updated>2015-05-01T22:52:06+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2015/05/01/an-octopress-slash-vagrant-experiment</id>
-    <content type="html"><![CDATA[<p>In my spare time, I like to try and learn new software technologies.
-For this I use my Windows laptop. The problem is that after several cycles of installing and removing stuff, the laptop become slow. Its performance keep degrading with time until I take some time to reset its installation and reconfigure things.</p>
-
-<p>Recently, after struggling with ruby installation on Windows I decided to reconsider Linux. Since I needed windows for other reasons, I decided to try using virtualization. I started by using <a href="https://www.virtualbox.org/">VirtualBox</a> to configure a Linux guest machine. While discussing this with a friend, he suggested trying <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
-
-<!-- more -->
-
-
-<p>I visited <a href="https://www.vagrantup.com/">Vagrant</a> website and it immediately got my attention for its simplicity. All you need is a configuration file, a small set of commands and the virtual machine is up an running.<br/>
-Playing around with Vagrant tutorial lead me to the idea of creating a sandbox for each software development experiment or project I work on.</p>
-
-<p>I decided to test the idea of this sandbox on my next project: this blog.<br/>
-As many software developers I settled on using <a href="http://octopress.org/">Octopress</a>/<a href="https://github.com/">GitHub</a> for my blog.<br/>
-For this purpose, I needed a Linux machine with the required tools installed and a synced copy of the blog source. After several iteration I got to a stage where I&rsquo;m able to edit the blog from any computer connected to the internet. <br/>
-In three steps I&rsquo;m able to deploy a blog sandbox and start blogging:</p>
-
-<ol>
-<li>First, install required tools: <a href="http://git-scm.com/">git</a>, <a href="https://www.virtualbox.org/">VirtualBox</a> and <a href="https://www.vagrantup.com/">Vagrant</a>.</li>
-<li>Second, clone the blog repository,</li>
-<li>Finally, start the sandbox by switching to its directory and running Vagrant up</li>
-</ol>
-
-
-<p>It took me some time to get to a simple and repeatable process.
-I&rsquo;m glad of the results as I&rsquo;m using the sandbox to publish this post. This experiment showed me the real benefits from using <a href="https://www.vagrantup.com/">Vagrant</a> and I&rsquo;m pretty sure I&rsquo;ll be using it in future projects.</p>
-
-<p>Although this post is not intended to be a tutorial on how to use <a href="https://www.vagrantup.com/">Vagrant</a> or <a href="http://octopress.org/">Octopress</a>, I&rsquo;m going to mention a couple of things I found interesting. I&rsquo;ll also write about some difficulties I encountered and how I solved them.</p>
-
-<h3>What I liked most</h3>
-
-<ul>
-<li><strong>Easy X11 forwarding over SSH connections</strong> by adding <code>config.ssh.forward_x11 = true</code> to Vagranfile. With <a href="http://mobaxterm.mobatek.net/">MobaXterm</a> running on my Windows host I was able to display the guest.</li>
-<li><strong>Easy port forwarding</strong> by adding <code>config.vm.network "forwarded_port", guest: 4000, host: 4000</code> all traffic network to the port 4000 on the host machine, was actually forwarded to the guest machine on the specified port.</li>
-<li><strong><a href="http://docs.vagrantup.com/v2/synced-folders/">Vagrant synced folder</a></strong> enables editing the files from both the guest and the host.</li>
-</ul>
-
-
-<h3>What took me some time to figure out</h3>
-
-<ul>
-<li><p><strong>Shell provisioner as <code>vagrant</code> user</strong> and not as root: using <code>privileged false</code> in Vagrantfile didn&rsquo;t work for me when setting local version of Ruby via rbenv. I finally settled on chaining a call to a script with the specified user <code>su -c "source /vagrant/vagrant/user-config.sh" vagrant</code></p></li>
-<li><p><strong>Blog preview only accessible from guest</strong>, at first I thought it was a problem with port forwarding, but finally, after tedious searches on the internet, I found out that binding the server to 0.0.0.0 in Rakefile was the solution. <br/>
-<code>server_host     = "0.0.0.0"   # server bind address for preview server</code><br/>
-<code>rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")</code></p></li>
-</ul>
-
-
-<p>If you&rsquo;re interessted in trying, the complete configuration is available in the  <a href="https://github.com/bil-t/octopress-vagrant-setup">octopress-vagrant-setup</a> github repository.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: agile | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/agile/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-12-17T16:12:29+00:00</updated>
+  <updated>2017-02-25T21:13:00+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Managing Agile Autonomous Teams : A Paradox ?]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/02/25/managing-agile-autonomous-teams-a-paradox/"/>
+    <updated>2017-02-25T18:31:50+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/02/25/managing-agile-autonomous-teams-a-paradox</id>
+    <content type="html"><![CDATA[<p>Agile teams are known to be autonomous and self-organizing.  <br/>
+When I started fostering agility and encouraging autonomy and self-organization for the teams I work with, It was only normal to to face a situation where teams decided to do things their way, under the name of autonomy and self-organization. <br/>
+The problem was that the direction they were heading in was not going to lead to the collective success of the enterprise.<br/>
+My role was to help them succeed, thus I had the challenge of directing them while helping them improve their agility and thus their autonomy and self organization.<br/>
+Is that an impossible equation to solve ?</p>
+
+<!-- more -->
+
+
+<p>If you&rsquo;re new to agility you might think that this a proof that agility fails in an enterprise context and is only meant for a small team.<br/>
+Fortunately it&rsquo;s not the case, agility, when well understood and applied, works at scale and delivers its promises.<br/>
+Autonomy of agile teams is a must but it&rsquo;s not sufficient, along that, teams in an enterprise context need alignment.
+Autonomy without alignment will only lead to anarchy, and this is something you don&rsquo;t want. Anarchy rarely leads to success.  <br/>
+Only when both alignment and autonomy are present, agile teams can become successful.</p>
+
+<p>This is greatly illustrated by <a href="http://blog.crisp.se/author/henrikkniberg">Henrik Kniberg</a> in the “<a href="http://blog.crisp.se/2014/03/27/henrikkniberg/spotify-engineering-culture-part-1">Spotify Engineering Culture</a>” and several of this talks.</p>
+
+<p><a href="/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/autonomy-alignment-kniberg.png"><img class="center" src="/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/autonomy-alignment-kniberg.png"></a></p>
+
+<blockquote><ul>
+<li>Down here is low alignment and low autonomy. Micromanagement Culture, no high level purpose just shut up and follow orders.</li>
+<li>Up here is high Alignment, but low autonomy. So leaders are good communicating what problems needs to be solved, but also they are telling people how to solve it.</li>
+<li>High Alignment and High Autonomy means leaders focus on what problems to solve but let the teams figure out how to solve it</li>
+<li>What about down here then? Low alignment and high autonomy. Means teams do whatever they want…</li>
+</ul>
+</blockquote>
+
+<p>But how do teams get alignment ?</p>
+
+<p>As alignment aim to make several teams work toward the same goals, it&rsquo;s by design an external factor to the teams.<br/>
+Thus the teams can&rsquo;t achieve alignment on their own.<br/>
+Agile managers are still an important piece of the puzzle, and fit naturally in the agile context.   <br/>
+By helping teams getting alignment, they provide them with one of the necessary ingredients for their success.</p>
+
+<p><a href="/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/velib.jpg"><img class="center" src="/images/2017-02-25-managing-agile-autonomous-teams-a-paradox/velib.jpg"></a></p>
+
+<p>I work in a fast-paced and constantly changing work environment, with geographically dispersed and culturally diverse teams, reaching alignment in such context is not an easy task. <br/>
+As an agile manager I need to constantly drive alignment, in order to allow autonomy to build. It&rsquo;s about keeping the people and the work progressing in the correct direction toward to the goals, and it&rsquo;s not to be confused by staying &ldquo;on plan&rdquo;.<br/>
+To accomplish this I practice consistently communicated, measurable, incremental goals. In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/44904381@N03/4424536847/" title="Vélib 2">Vélib 2</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Working Agreements, A Must Have For Agile Teams]]></title>
@@ -25,7 +77,7 @@ Finally, Agile teams are self-organized and their day to day activity involve in
 
 <p>But you might be wondering what make agile teams reach top performance and effectiveness. Interested to know ?</p>
 
-<p>{% img center /images/2016-11-05-working-agreements/f4-1.png %}</p>
+<p><img class="center" src="/images/2016-11-05-working-agreements/f4-1.png"></p>
 
 <!-- more -->
 
@@ -39,7 +91,7 @@ When group norms and roles are established, group members are autonomous and are
 Agile or not, this model applies to any team, and an agile team can accelerate its progress toward performing by
 making use of the &ldquo;Working Agreement&rdquo; tool.</p>
 
-<p>{% img center /images/2016-11-05-working-agreements/tuckman.jpg %}</p>
+<p><img class="center" src="/images/2016-11-05-working-agreements/tuckman.jpg"></p>
 
 <p>So what are &ldquo;Working Agreements&rdquo; ?
 <strong>Working agreement</strong> are a set of rules or protocols the team agree to follow when working together.
@@ -61,7 +113,7 @@ The second one is their number: the set of Working agreements need to have a lim
 The third one is documented: by documented I mean defined and known by all team members. Ideally the should be made visible by posting them on a wall or an electronic board.    
 Following these three rules will help you ensure effective working agreements fro your team.  </p>
 
-<p>{% img center /images/2016-11-05-working-agreements/f4-2.png %}</p>
+<p><img class="center" src="/images/2016-11-05-working-agreements/f4-2.png"></p>
 
 <p>A team can setup its first working agreement during a retrospective or a dedicated session.<br/>
 The session can be facilitated by the product owner, the scrum master or any other team member.  <br/>
@@ -97,7 +149,7 @@ Planning and conducting retrospectives is not hard, but some pitfalls might prev
 
 <h1>Totally winging it</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/totally-winging-it.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/totally-winging-it.jpg">
 As any other work session or meeting a retrospective should be structured and activities prepared.<br/>
 A retrospective is usually composed from several activities that will help the team spot imrovement opportunities and deduce relevant actions.  <br/>
 To achieve this goal the activities need to fit well together, the timing already figured out and sometime materials need to be prepared up-front, like posters, cards, etc.<br/>
@@ -107,7 +159,7 @@ Choose a theme and the sequence of the activities, take some time to refresh you
 
 <h1>Fighting Hunger</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/fighting-hunger.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/fighting-hunger.jpg">
 <a href="https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs#Physiological_needs">Maslow&rsquo;s hierarchy of needs</a> tells us that food is one of the very basic human needs. <br/>
 You need to remeber that whenever you find yourself in the obligation to plan a retrospective during lunchtime.<br/>
 It&rsquo;s better to avoid such situation, participants will be only thinking on when the session will end so that they can get to eat. At worst if you can&rsquo;t avoid it, do order food for the team, competing against hunger is a lost battle. <br/>
@@ -116,14 +168,14 @@ Don&rsquo;t forget to schedule a short break in the middle of the session, let p
 
 <h1>Lightning Speed Retrospective</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/lightning-speed-retrospective.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/lightning-speed-retrospective.jpg">
 A typical retrospective will take between 1h30min and 2h to deliver good actionable items. It&rsquo;s simply the time needed to collect the data, analyze it and deduce improvement actions.<br/>
 If the team is lacking time, the last thing to is to shorten the retrospective. Doing that will only lead to the opposite desired outcome, wasting time on an inefficient session. <br/>
 When the team find itself unable to allocate the appropriate time to its retrospective, my advice is to exceptionally skip the occurrence, secure the next retrospective and make sure the team identify what need to be done to avoid hitting the same issue in the future.</p>
 
 <h1>Skipping the Starter</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/skipping-the-starter.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/skipping-the-starter.jpg">
 It&rsquo;s a good practice to start any work session with an ice breaker. Why ? Studies have shown that when a  participant in a meeting doesn&rsquo;t speak during the first five minutes, he usually remain silent till the end of the session. <br/>
 You don&rsquo;t want that to happen to your retrospective, on the contrary you want all the participants to speak up and share their concerns and ideas on improvement. <br/>
 By skipping your check-in activity you are giving each participant the permission to remain silent for the rest of the session.
@@ -131,14 +183,14 @@ Spending 5 or 10 minutes in an ice break at the start of the retrospective is go
 
 <h1>Skipping the Desert</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/skipping-the-desert.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/skipping-the-desert.jpg">
 Retrospecting is part of your process, so as the rest it can and need to be improved constantly.<br/>
 The check-out activity is your opportunity to get feedback from the participants in order to improve the next occurrences.<br/>
 Don&rsquo;t skip it, make sure you plan a &ldquo;Return on Time Invested&rdquo; or a &ldquo;Plus/Delta&rdquo; activity to get insights on what can be improved.</p>
 
 <h1>All Talk and No Action</h1>
 
-<p>{% img center /images/2016-07-28-6-things-that-can-ruin-your-retrospective/all-talk-and-no-action.jpg %}
+<p><img class="center" src="/images/2016-07-28-6-things-that-can-ruin-your-retrospective/all-talk-and-no-action.jpg">
 Your team is extremely busy and improvement actions are piling up in a todo list somewhere.<br/>
 Clearly the teams not improving, and it will soon start loosing faith in retrospectives and see them rather as waste.<br/>
 This pitfall can be avoided by simply adding the identified improvement actions to the team backlog and treat them as any other task in the backlog.  Apply to them the same prioritizing technique and plan them accordingly. <br/>
@@ -153,7 +205,7 @@ In the Scrum framework this technique is called &ldquo;Scrumming the Scrum&rdquo
     <id>http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective</id>
     <content type="html"><![CDATA[<p>While attending to a <a href="https://management30.com/events/two-day-course/">2-day course on Management 3.0</a>, on of the new things I discovered was the &ldquo;solution focus&rdquo; approach to improving things. Googling on the matter I learned that this technique come from the <a href="https://en.wikipedia.org/wiki/Solution_focused_brief_therapy">&ldquo;Solution focused brief therapy&rdquo;</a>.</p>
 
-<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg %}</p>
+<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg"></p>
 
 <p>In a solution focused brief therapy (SFBT) the patient is asked to focus on solution-building rather than problem-solving. This can be achieved by exploring current resources and future hopes rather than present problems and past causes. <br/>
 First thing that popped to my mind when discovering SFBT, is its similarity to an agile retrospective.<br/>
@@ -186,7 +238,7 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 </ul>
 
 
-<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png %}</p>
+<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png"></p>
 
 <ul>
 <li><strong>What action cans be done in the next iteration accomplish a +1 improvement?</strong></li>
@@ -203,7 +255,7 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 
 <p>Iteration 4 - <strong>Finalize &amp; prepare a 1&#8217;30 pitch to share with the other groups.</strong></p>
 
-<p>{% img center /images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg %}</p>
+<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg"></p>
 
 <p>I usually remind the groups to make us of the SMART goals approach when deciding on the actions for the next iteration.</p>
 
@@ -225,7 +277,7 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 To conduct these remote retrospectives, we have settled on using <a href="https://trello.com/">Trello</a>. <br/>
 My colleague <a href="http://philippe.bourgau.net/">BOURGAU Philippe</a> has <a href="http://philippe.bourgau.net/trellospectives-remote-retrospectives-with-trello/">blogged on what we tried</a> and how we ended up by opting for Trello.<br/>
 Since then we have made some improvements on speeding up the meeting preparation, and I think it&rsquo;s time to share them.
-{% img center /images/2015-09-20-agile-retrospectives-using-trello/trello.png %}</p>
+<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/trello.png"></p>
 
 <!-- more -->
 
@@ -234,7 +286,7 @@ Since then we have made some improvements on speeding up the meeting preparation
 So it was natural for us to start creating boards to be used as templates for the activities. <br/>
 These boards served as a starting point when setting up a session and were improved continuously. <br/>
 So how is this used practically ?<br/>
-{% img center /images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png %}
+<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png">
 In our case, a facilitator is responsible of preparing and animating each session. <br/>
 When preparing the session, instead of creating each activity board from scratch, the facilitator had now a catalog in which he could choose the activities. <br/>
 All he had to do is to copy the board, give him a specific name and share it with the team. <br/>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: amazon fire hd6 | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/amazon-fire-hd6/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-12-17T16:12:29+00:00</updated>
+  <updated>2017-02-25T21:13:00+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -22,7 +22,7 @@
 I had high hopes that it would be the perfect tablet to read books, use <a href="www.skype.com">Skype</a> and check mails.<br/>
 I found its price attractive with respect to its characteristics, and being an old customer of Amazon I was confident that the tablet will meet my expectations.</p>
 
-<p>{% img center /images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/fire-gapps.png %}</p>
+<p><img class="center" src="/images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/fire-gapps.png"></p>
 
 <!-- more -->
 
@@ -54,7 +54,7 @@ If you, being an enthusiast like me, have upgraded you tablet OS as soon as you 
 
 <ul>
 <li>Installtion of the ADB driver on my windows 8.1 didn&rsquo;t work well. The trick that worked for me was to delete the Fire device from the device manger and to manually add an android ADB composite driver.
-{% img center /images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/android-adb.png %}</li>
+<img class="center" src="/images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/android-adb.png"></li>
 </ul>
 </li>
 <li>Install Fire OS 4.5.3:

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: android | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2016-12-17T16:12:29+00:00</updated>
+  <updated>2017-02-25T21:13:00+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -23,7 +23,7 @@ It was my first Android tablet and I mainly planned to use it to make Skype call
 We also used it to play nursery rhyme videos to our last-born.   <br/>
 As he grew, he was convinced that it was &ldquo;his&rdquo; tablet and started to play games on it.<br/>
 It didn&rsquo;t take him long to figure out how to look for YouTube videos or to install new games, this is when troubles started.
-     {% img center /images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2.png %}</p>
+     <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2.png"></p>
 
 <!-- more -->
 
@@ -40,7 +40,7 @@ Beside being annoying, they are difficult for kids to skip. Most of the time the
 <p>Then I installed <a href="https://play.google.com/store/apps/details?id=com.kiddoware.kidsplace">Kids Place - Parental Control</a> from <a href="https://play.google.com/store/apps/developer?id=kiddoware">kiddoware</a>.  <br/>
 Beside restricting the kids to apps you have approved, Kids Place can be configured to override the &lsquo;home&rsquo; button and to run on tablet boot.<br/>
 Additional plugins such as a safe video player, safe browser and screen time management can be installed too.
-    {% img center /images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2-Kids-Place.png %}
+    <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/Xoom2-Kids-Place.png">
 With this configuration the Xoom 2 became a child safe Android tablet that I was confident to leave in my kid&rsquo;s hands.</p>
 
 <p>If you&rsquo;re interested in rooting your Xoom 2, here&rsquo;s the steps to follow:<br/>
@@ -49,7 +49,7 @@ With this configuration the Xoom 2 became a child safe Android tablet that I was
 2. Plug your tablet to your PC, check the device manager to make sure the driver is properly installed.<br/>
 If you see a yellow exclamation mark next to the Xoom 2 driver, right-click on it, go to &lsquo;Driver&rsquo; tab, click &lsquo;Update Driver&rsquo;, click &lsquo;Browse my computer &hellip;&rsquo;, click the &lsquo;Let me pick &hellip;&rsquo;<br/>
 From the list choose the &lsquo;Android ADB Composite Driver&rsquo;<br/>
-    {% img center /images/2015-09-11-making-your-xoom-2-kid-safe/adb-driver.png %}  <br/>
+    <img class="center" src="/images/2015-09-11-making-your-xoom-2-kid-safe/adb-driver.png">  <br/>
 3. Download and unzip <a href="https://github.com/bil-t/android-utils/blob/master/Xoom2-IceCreamSandwich-RootFiles.zip?raw=true">Xoom2-IceCreamSandwich-RootFiles</a><br/>
 4. Run DroidRazrRoot404.bat<br/>
 5. Your tablet will reboot and you will have gained root access.</p>
@@ -71,7 +71,7 @@ From the list choose the &lsquo;Android ADB Composite Driver&rsquo;<br/>
 I had high hopes that it would be the perfect tablet to read books, use <a href="www.skype.com">Skype</a> and check mails.<br/>
 I found its price attractive with respect to its characteristics, and being an old customer of Amazon I was confident that the tablet will meet my expectations.</p>
 
-<p>{% img center /images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/fire-gapps.png %}</p>
+<p><img class="center" src="/images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/fire-gapps.png"></p>
 
 <!-- more -->
 
@@ -103,7 +103,7 @@ If you, being an enthusiast like me, have upgraded you tablet OS as soon as you 
 
 <ul>
 <li>Installtion of the ADB driver on my windows 8.1 didn&rsquo;t work well. The trick that worked for me was to delete the Fire device from the device manger and to manually add an android ADB composite driver.
-{% img center /images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/android-adb.png %}</li>
+<img class="center" src="/images/2015-07-23-unlock-full-android-power-to-your-amazon-fire-hd-6/android-adb.png"></li>
 </ul>
 </li>
 <li>Install Fire OS 4.5.3:
