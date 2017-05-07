@@ -4,7 +4,7 @@
   <title><![CDATA[Category: agile | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/agile/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2017-02-25T21:13:00+00:00</updated>
+  <updated>2017-05-07T17:07:45+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Turn The Software Development Team Around With Scrum]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/05/07/turn-the-software-development-team-around-with-scrum/"/>
+    <updated>2017-05-07T13:56:53+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/05/07/turn-the-software-development-team-around-with-scrum</id>
+    <content type="html"><![CDATA[<p>In his book, <a href="https://www.amazon.fr/Turn-Ship-Around-Building-Breaking/dp/0241250943">Turn The Ship Around!</a>, <a href="http://www.davidmarquet.com/">L. David Marquet</a> tells us how he transformed the culture of a united states submarine from a leader-follower culture to a leader-leader culture.<br/>
+Moreover, he proves the benefits of this cultural change that made the submarine crew improve from the least to the most effective one.<br/>
+While reading this book, thing that I enjoyed and recommend, I couldn&rsquo;t help but projecting the ideas explained in the book against my experience with agile software development teams and more specifically the SCRUM framework usage. The book made me see the different practices and principles used in <a href="https://www.scrumalliance.org/why-scrum/core-scrum-values-roles">SCRUM</a> under a new and interesting perspective.<br/>
+I&rsquo;ll try to share this with you in this blog-post.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/submarine.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/submarine.jpg"></a></p>
+
+<!-- more -->
+
+
+<p>The first concept that caught my attention in the book is around <strong>control</strong>. The author speaks about the importance of delegating control and decision making authority, and provides some of mechanisms to implement this. I chose to zoom on the following ones: <strong>Short, Early Conversations Make Efficient Work</strong>, <strong>Use &ldquo;Intend to &hellip;&rdquo; to Turn Passive Followers into Active Leaders</strong>, <strong>Eliminate Top-Down Monitoring Systems</strong>, <strong>Think Out Loud</strong>.<br/>
+You must be wondering by now, what does that have to do with agility and software development. Well in agile software development, autonomy is one of the main characteristics for team effectiveness, delegating control and decision making is contributing to the autonomy of the teams and individuals. It&rsquo;s clear that we are on the same page here.<br/>
+Adopting short and early conversations to improve efficiency is just another way to describe the following agile principle: &ldquo;The most efficient and effective method of conveying information to and within a development team is face-to-face conversation&rdquo;. The similarities don&rsquo;t stop here, when applying SCRUM, the Daily stand-up ritual makes the team adopt the &ldquo;I intend to &hellip;&rdquo; mechanism. Moreover, SCRUM offers many opportunities for team members to adopt a &ldquo;think out loud&rdquo; mechanism, whether in backlog grooming sessions, poker estimations, sprint reviews, daily stand-ups, and retrospectives.<br/>
+SCRUM teams commit on their deliveries in sprint plannings and naturally monitor and report their progress to their stakeholders in sprint reviews, thus eliminating the top down monitoring activity. It&rsquo;s not uncommon to see SCRUM teams producing indicators on their progress, the quality of their work, and making use of visual monitoring in order to share the information.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/la-conversation.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/la-conversation.jpg"></a></p>
+
+<p>The second concept in the book is about <strong>competence</strong>, continuously improving it and acquiring new ones.<br/>
+SCRUM enables this continuous learning approach for teams. For instance the retrospective is the dedicated ceremony in SCRUM to inspect how the team is doing and define improvement actions.  It&rsquo;s also common for effective SCRUM team to leave some &ldquo;slack&rdquo; in their backlog to work on some innovations and learning tasks. Moreover, it&rsquo;s usual  for software development teams adopting SCRUM to also adopt the extreme programming principles, the latter introduces several practices aiming to improve the teams competence like pair programming and code review. <br/>
+Going back to the agile software development teams characteristics it&rsquo;s clear that with the competence concern we&rsquo;re hitting the mastery characteristic the team should have to become effective.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/skills.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/skills.jpg"></a></p>
+
+<p>Last the author speaks about the <strong>clarity</strong> and it&rsquo;s importance when applying the previous principles.<br/>
+In SCRUM clarity of the goals is achieved through the customer collaboration, the recurrent sprint review and sprint planning sessions. The introduction the product owner role within the team helps in clarifying the goals anytime it&rsquo;s needed. So last but not least we get to the third main characteristic necessary for an agile software development team; the purpose.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/clarity.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/clarity.jpg"></a></p>
+
+<p>In summary, in Turn The Ship Around!, L. David Marquet tells a story of deploying autonomy, mastery and purpose to a submarine crew and making it improve from a below average score to the highest score. The SCRUM agile framework, when applied correctly, can help you do the same for software development teams.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/scrum.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/scrum.jpg"></a></p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/rascoop/5367935297/" title="US Submarine existing Curacao harbour">US Submarine existing Curacao harbour</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/guillaume-andreux/34373378291/" title="La conversation">La conversation</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/danielle-chang/4910485601/" title="skills">skills</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/34690904@N02/33554170264/" title="clarity">clarity</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/cgt/8064378807/" title="scrum">scrum</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Managing Agile Autonomous Teams : A Paradox ?]]></title>
@@ -56,7 +104,8 @@ By helping teams getting alignment, they provide them with one of the necessary 
 
 <p>I work in a fast-paced and constantly changing work environment, with geographically dispersed and culturally diverse teams, reaching alignment in such context is not an easy task. <br/>
 As an agile manager I need to constantly drive alignment, in order to allow autonomy to build. It&rsquo;s about keeping the people and the work progressing in the correct direction toward to the goals, and it&rsquo;s not to be confused by staying &ldquo;on plan&rdquo;.<br/>
-To accomplish this I practice consistently communicated, measurable, incremental goals. In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
+To accomplish this I practice consistently communicated, measurable, incremental goals.<br/>
+In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
 
 <h2><br></h2>
 
@@ -265,40 +314,6 @@ It starts with an activity to <strong><em>gather data</em></strong> regarding th
 
 <p><em>photo credits:</em> <br/>
 <a href="https://www.flickr.com/photos/thesaleswhisperer/14188549988/" title="problems solutions entrepreneurship">problems solutions entrepreneurship</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,<a href="https://www.flickr.com/photos/jogibaer2/5459043426/" title="Post-It">Post-It</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Agile Retrospectives Using Trello]]></title>
-    <link href="http://bilal.eltayara.net/blog/2015/09/20/agile-retrospectives-using-trello/"/>
-    <updated>2015-09-20T20:31:53+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2015/09/20/agile-retrospectives-using-trello</id>
-    <content type="html"><![CDATA[<p>As a distributed agile team working from Paris and Beirut, remote retrospectives are part of our rituals.<br/>
-To conduct these remote retrospectives, we have settled on using <a href="https://trello.com/">Trello</a>. <br/>
-My colleague <a href="http://philippe.bourgau.net/">BOURGAU Philippe</a> has <a href="http://philippe.bourgau.net/trellospectives-remote-retrospectives-with-trello/">blogged on what we tried</a> and how we ended up by opting for Trello.<br/>
-Since then we have made some improvements on speeding up the meeting preparation, and I think it&rsquo;s time to share them.
-<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/trello.png"></p>
-
-<!-- more -->
-
-
-<p>As you might know, retrospectives activities are recurrent, it&rsquo;s not unlikely to redo the same activity a couple of retrospectives later.<br/>
-So it was natural for us to start creating boards to be used as templates for the activities. <br/>
-These boards served as a starting point when setting up a session and were improved continuously. <br/>
-So how is this used practically ?<br/>
-<img class="center" src="/images/2015-09-20-agile-retrospectives-using-trello/gald-sad-mad.png">
-In our case, a facilitator is responsible of preparing and animating each session. <br/>
-When preparing the session, instead of creating each activity board from scratch, the facilitator had now a catalog in which he could choose the activities. <br/>
-All he had to do is to copy the board, give him a specific name and share it with the team. <br/>
-Each board contains a short description of the activity, and a suitable setup to conduct it.<br/>
-In reality the facilitator still created boards from scratch, but only when no template was available.<br/>
-But now, instead of doing it only for his session, he took the time to first create a template and then copy it into his session. <br/>
-This way he would have contributed to the enrichment of the catalog and facilitated the preparation of upcoming sessions. <br/>
-We&rsquo;ve been doing this for quite some time and I think it&rsquo;s worth to share it with the agile community. <br/>
-We&rsquo;ve learned a lot form others&#8217; experiments and it&rsquo;s time for us to contribute back with what we experimented.  <br/>
-I&rsquo;ve started publishing some of the templates I made to the <a href="https://trello.com/agileretrospectives">Agile Retrospectives</a> space, it&rsquo;s a public Trello team.
-As I&rsquo;m writing this post, there are six published templates. I&rsquo;ll soon be asking other contributors on the team to share their work too, so stay tuned for more templates. <br/>
-I hope you will find this useful for your retrospectives, and if you do use a template and have any improvement to make, don&rsquo;t hesitate to join the <a href="https://trello.com/agileretrospectives">team</a>.</p>
 ]]></content>
   </entry>
   

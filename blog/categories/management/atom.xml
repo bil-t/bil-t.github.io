@@ -4,7 +4,7 @@
   <title><![CDATA[Category: management | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/management/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2017-02-25T21:13:00+00:00</updated>
+  <updated>2017-05-07T17:07:45+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Turn The Software Development Team Around With Scrum]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/05/07/turn-the-software-development-team-around-with-scrum/"/>
+    <updated>2017-05-07T13:56:53+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/05/07/turn-the-software-development-team-around-with-scrum</id>
+    <content type="html"><![CDATA[<p>In his book, <a href="https://www.amazon.fr/Turn-Ship-Around-Building-Breaking/dp/0241250943">Turn The Ship Around!</a>, <a href="http://www.davidmarquet.com/">L. David Marquet</a> tells us how he transformed the culture of a united states submarine from a leader-follower culture to a leader-leader culture.<br/>
+Moreover, he proves the benefits of this cultural change that made the submarine crew improve from the least to the most effective one.<br/>
+While reading this book, thing that I enjoyed and recommend, I couldn&rsquo;t help but projecting the ideas explained in the book against my experience with agile software development teams and more specifically the SCRUM framework usage. The book made me see the different practices and principles used in <a href="https://www.scrumalliance.org/why-scrum/core-scrum-values-roles">SCRUM</a> under a new and interesting perspective.<br/>
+I&rsquo;ll try to share this with you in this blog-post.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/submarine.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/submarine.jpg"></a></p>
+
+<!-- more -->
+
+
+<p>The first concept that caught my attention in the book is around <strong>control</strong>. The author speaks about the importance of delegating control and decision making authority, and provides some of mechanisms to implement this. I chose to zoom on the following ones: <strong>Short, Early Conversations Make Efficient Work</strong>, <strong>Use &ldquo;Intend to &hellip;&rdquo; to Turn Passive Followers into Active Leaders</strong>, <strong>Eliminate Top-Down Monitoring Systems</strong>, <strong>Think Out Loud</strong>.<br/>
+You must be wondering by now, what does that have to do with agility and software development. Well in agile software development, autonomy is one of the main characteristics for team effectiveness, delegating control and decision making is contributing to the autonomy of the teams and individuals. It&rsquo;s clear that we are on the same page here.<br/>
+Adopting short and early conversations to improve efficiency is just another way to describe the following agile principle: &ldquo;The most efficient and effective method of conveying information to and within a development team is face-to-face conversation&rdquo;. The similarities don&rsquo;t stop here, when applying SCRUM, the Daily stand-up ritual makes the team adopt the &ldquo;I intend to &hellip;&rdquo; mechanism. Moreover, SCRUM offers many opportunities for team members to adopt a &ldquo;think out loud&rdquo; mechanism, whether in backlog grooming sessions, poker estimations, sprint reviews, daily stand-ups, and retrospectives.<br/>
+SCRUM teams commit on their deliveries in sprint plannings and naturally monitor and report their progress to their stakeholders in sprint reviews, thus eliminating the top down monitoring activity. It&rsquo;s not uncommon to see SCRUM teams producing indicators on their progress, the quality of their work, and making use of visual monitoring in order to share the information.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/la-conversation.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/la-conversation.jpg"></a></p>
+
+<p>The second concept in the book is about <strong>competence</strong>, continuously improving it and acquiring new ones.<br/>
+SCRUM enables this continuous learning approach for teams. For instance the retrospective is the dedicated ceremony in SCRUM to inspect how the team is doing and define improvement actions.  It&rsquo;s also common for effective SCRUM team to leave some &ldquo;slack&rdquo; in their backlog to work on some innovations and learning tasks. Moreover, it&rsquo;s usual  for software development teams adopting SCRUM to also adopt the extreme programming principles, the latter introduces several practices aiming to improve the teams competence like pair programming and code review. <br/>
+Going back to the agile software development teams characteristics it&rsquo;s clear that with the competence concern we&rsquo;re hitting the mastery characteristic the team should have to become effective.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/skills.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/skills.jpg"></a></p>
+
+<p>Last the author speaks about the <strong>clarity</strong> and it&rsquo;s importance when applying the previous principles.<br/>
+In SCRUM clarity of the goals is achieved through the customer collaboration, the recurrent sprint review and sprint planning sessions. The introduction the product owner role within the team helps in clarifying the goals anytime it&rsquo;s needed. So last but not least we get to the third main characteristic necessary for an agile software development team; the purpose.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/clarity.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/clarity.jpg"></a></p>
+
+<p>In summary, in Turn The Ship Around!, L. David Marquet tells a story of deploying autonomy, mastery and purpose to a submarine crew and making it improve from a below average score to the highest score. The SCRUM agile framework, when applied correctly, can help you do the same for software development teams.</p>
+
+<p><a href="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/scrum.jpg"><img class="center" src="/images/2017-05-07-turn-the-software-development-team-around-with-scrum/scrum.jpg"></a></p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/rascoop/5367935297/" title="US Submarine existing Curacao harbour">US Submarine existing Curacao harbour</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/guillaume-andreux/34373378291/" title="La conversation">La conversation</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/danielle-chang/4910485601/" title="skills">skills</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/34690904@N02/33554170264/" title="clarity">clarity</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,
+<a href="https://www.flickr.com/photos/cgt/8064378807/" title="scrum">scrum</a> <a href="https://creativecommons.org/licenses/by-nc/2.0/">(license)</a>,</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Managing Agile Autonomous Teams : A Paradox ?]]></title>
@@ -56,7 +104,8 @@ By helping teams getting alignment, they provide them with one of the necessary 
 
 <p>I work in a fast-paced and constantly changing work environment, with geographically dispersed and culturally diverse teams, reaching alignment in such context is not an easy task. <br/>
 As an agile manager I need to constantly drive alignment, in order to allow autonomy to build. It&rsquo;s about keeping the people and the work progressing in the correct direction toward to the goals, and it&rsquo;s not to be confused by staying &ldquo;on plan&rdquo;.<br/>
-To accomplish this I practice consistently communicated, measurable, incremental goals. In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
+To accomplish this I practice consistently communicated, measurable, incremental goals.<br/>
+In my next post I&rsquo;ll explain one of the tools I use to bring that guidance to the agile teams.</p>
 
 <h2><br></h2>
 
@@ -286,54 +335,6 @@ Abiding by this rule I will hopefully get back punctuality and avoid annoying pe
 
 <p><em>photo credits:</em> <br/>
 <a href="https://www.flickr.com/photos/smemon/4961717384/" title="time">time</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/26008085@N07/2739411797/" title="Broken Windows Theory In Action">Broken Windows Theory In Action</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/artistick-nik/5616580252/" title="punctuality">punctuality</a> <a href="https://creativecommons.org/licenses/by-nd/2.0/">(license)</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[3 Things Every Software Development Manager Should Do]]></title>
-    <link href="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
-    <updated>2015-05-13T20:07:01+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
-    <content type="html"><![CDATA[<p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h2>Inspection is your friend</h2>
-
-<p>It&rsquo;s crucial to know how your code source health is.
-Complex code tend to have a high maintenance cost and makes entry cost higher for a newcomer. Failing to apply best practices and recommendations can result in various bugs. A poor test coverage makes future development very likely to introduce regressions.<br/>
-Static and dynamic analysis are you best friends to give you accurate indicators about your code health. They also help you take appropriate actions to cure the spotted deficiencies.<br/>
-If you don&rsquo;t have this yet in place, all it takes is these simple steps:<br/>
-1. Start by setting up a continuous code analysis process for your source code<br/>
-2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
-3. Every time an issue is fixed, adjust the quality gate accordingly</p>
-
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
-
-<h2>Better double-check</h2>
-
-<p>Static and dynamic code analysis can help you track the source code health but when it comes to technical design they are rather limited.<br/>
-When software development manager drifts away from the code because of other duties that require his attention, code review can be a good help.<br/>
-By reviewing the changes regularly the software development manager can stay up to date with the design changes and can intervene at an early stage if needed.
-How to do it? By a continuous automated code review generation process:<br/>
-1. Automatically create a code review for each new change<br/>
-2. Keep the pace, perform the review regularly</p>
-
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
-
-<h2>Get your hands dirty</h2>
-
-<p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
-My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
-
-<p><img class="center" src="/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
-
-<h2><br></h2>
-
-<p><em>photo credits:</em> <a href="https://www.flickr.com/photos/dumindaxsb/2873528646" title="On Screen Magnification by Duminda Jayasena, sur Flickr">On Screen Magnification</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/jblyberg/3942639156" title="My eyes are starting to hurt by John Blyberg, sur Flickr">My eyes are starting to hurt</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/adulau/5136853276" title="Chris Nickerson at hack.lu 2010 by Alexandre Dulaunoy, sur Flickr">Chris Nickerson at hack.lu 2010</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a></p>
 ]]></content>
   </entry>
   
