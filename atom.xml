@@ -4,7 +4,7 @@
   <title><![CDATA[Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2017-05-07T17:07:45+00:00</updated>
+  <updated>2017-07-27T20:36:53+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Agile Managers, A Blind Spot?]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/07/27/agile-managers/"/>
+    <updated>2017-07-27T20:20:14+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/07/27/agile-managers</id>
+    <content type="html"><![CDATA[<p>When deploying lean and agility a lot of recommendation exist on how to take care of your collaborators during this change process. <br/>
+In the literature, agile experts insist a lot on the necessity to pay attention in giving the right level of empowerment to teams and individuals. Teams are encouraged to self-organize, to take things in hand and work actively on improving their deliverable and their process.<br/>
+Moreover, management is asked to provide a safe environment that foster experimentation and give the team the right to learn from its failures.<br/>
+The manager role is banished in all agile frameworks, and rather replaced by team supporting roles, such as Scrum Master and Product Owner in SCRUM framework. These new roles are rather focused on helping the team reach its goals in a servant-leader manner. <br/>
+All this looks great, self-organization, empowerment, decentralized decision making &hellip; teamwork sounds great in an agile world, but unfortunately there&rsquo;s a caveat.</p>
+
+<p><a href="http://bilal.eltayara.net/images/2017-07-27-agile-managers/and-pretty-agile.jpg.jpg"><img class="center" src="http://bilal.eltayara.net/images/2017-07-27-agile-managers/and-pretty-agile.jpg"></a></p>
+
+<!-- more -->
+
+
+<p>Often lean and agile frameworks are deployed and applied to the corporate process delivering values while the organization remain the same. For the company board, managers are still part of the organizational chart and are still accountable on achieving the business goals. The same managers to which agile experts are saying to let go, give the teams autonomy and a safe environment. But what about these managers, who is giving them the safe environment to let go? How a manager accountable for his teams’ deliveries can feel safe while he&rsquo;s accountable on the performance of his teams.  Well the obvious answer is, in the same way he should provide a safe environment for his collaborators, his superiors should equally provide him with one to operate within, self-organize and learn. <br/>
+From this, it&rsquo;s clear that, when it comes to agility, the whole chain of command should apply the same principles.  Traditional command and control management is incompatible with the mission command style of agile teams, thus breaking the agile chain will only lead to failure. <br/>
+Deploying agility in enterprise can&rsquo;t be done only for business processes it should be holistic and include the organizational processes too. Even more in case of phased deployment, enterprise should rather start by deploying agility to the organizational processes to shift the mindsets and interactions, doing this will facilitate the deployment of agility for business processes and increase the chances of success. <br/>
+Unfortunately, most of the enterprises, if not all, start deploying agility to business processes. The choice is usually driven by the gains perceived in improving the business processes, while ignoring the strong dependency on the organizational processes. The irony is that the agile product management practices should have helped to get the correct sequencing, and the enterprise most probably used transnational management practices to plan and deploy agility! Food for thought &hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Turn The Software Development Team Around With Scrum]]></title>
@@ -1323,54 +1346,6 @@ Getting back to our internal wiki problem statement, if you ask me how to solve 
 <h2><br></h2>
 
 <p><em>photo credits:</em> <a href="https://www.flickr.com/photos/jamiesrabbits/4248396588" title="Obsolete Book - 5/365 by Jamie, sur Flickr">Obsolete Book</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/loopzilla/139024246" title="iPhoto 6.0.2 munged my directory tree! by Gordon Joly, sur Flickr">iPhoto 6.0.2 munged my directory tree!</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/blake4tx/2840242241" title="Picasa Web Albums - Add Name Tags by blakeburris, sur Flickr">Picasa Web Albums - Add Name Tags</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,<a href="https://www.flickr.com/photos/frederickmdrocks/6160077394" title="Inbox Triage With Gmail by David Bruce Jr., sur Flickr">Inbox Triage With Gmail</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,<a href="https://www.flickr.com/photos/psychemedia/2857518684" title="ORO resource splash page meta data by Tony Hirst, sur Flickr">ORO resource splash page meta data</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[3 Things Every Software Development Manager Should Do]]></title>
-    <link href="http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do/"/>
-    <updated>2015-05-13T20:07:01+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2015/05/13/3-things-every-software-development-manager-should-do</id>
-    <content type="html"><![CDATA[<p>Here are three practices that I found to be of a great help in my day-to-day work as software development manager.</p>
-
-<!-- more -->
-
-
-<p></p>
-
-<h2>Inspection is your friend</h2>
-
-<p>It&rsquo;s crucial to know how your code source health is.
-Complex code tend to have a high maintenance cost and makes entry cost higher for a newcomer. Failing to apply best practices and recommendations can result in various bugs. A poor test coverage makes future development very likely to introduce regressions.<br/>
-Static and dynamic analysis are you best friends to give you accurate indicators about your code health. They also help you take appropriate actions to cure the spotted deficiencies.<br/>
-If you don&rsquo;t have this yet in place, all it takes is these simple steps:<br/>
-1. Start by setting up a continuous code analysis process for your source code<br/>
-2. Define a quality profile and break the build whenever the quality gateway is violated<br/>
-3. Every time an issue is fixed, adjust the quality gate accordingly</p>
-
-<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/inspection.jpg"></p>
-
-<h2>Better double-check</h2>
-
-<p>Static and dynamic code analysis can help you track the source code health but when it comes to technical design they are rather limited.<br/>
-When software development manager drifts away from the code because of other duties that require his attention, code review can be a good help.<br/>
-By reviewing the changes regularly the software development manager can stay up to date with the design changes and can intervene at an early stage if needed.
-How to do it? By a continuous automated code review generation process:<br/>
-1. Automatically create a code review for each new change<br/>
-2. Keep the pace, perform the review regularly</p>
-
-<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/diff.jpg"></p>
-
-<h2>Get your hands dirty</h2>
-
-<p>Quite often the software development manager doesn&rsquo;t have room anymore for coding. Unfortunately this can make him unaware of the coding conditions, pain-points and other important factors. If the team fail to give him a comprehensive feedback this can result in negative outcomes. <br/>
-My suggestion, make room to code. Besides giving you an accurate idea of the work conditions of your team, you&rsquo;ll enjoy performing what initially made you want this job.</p>
-
-<p><img class="center" src="http://bilal.eltayara.net/images/2015-05-13-3-things-every-software-development-manager-should-do/hack.jpg"></p>
-
-<h2><br></h2>
-
-<p><em>photo credits:</em> <a href="https://www.flickr.com/photos/dumindaxsb/2873528646" title="On Screen Magnification by Duminda Jayasena, sur Flickr">On Screen Magnification</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/jblyberg/3942639156" title="My eyes are starting to hurt by John Blyberg, sur Flickr">My eyes are starting to hurt</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/adulau/5136853276" title="Chris Nickerson at hack.lu 2010 by Alexandre Dulaunoy, sur Flickr">Chris Nickerson at hack.lu 2010</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a></p>
 ]]></content>
   </entry>
   

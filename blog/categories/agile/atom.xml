@@ -4,7 +4,7 @@
   <title><![CDATA[Category: agile | Bilal El Tayara]]></title>
   <link href="http://bilal.eltayara.net/blog/categories/agile/atom.xml" rel="self"/>
   <link href="http://bilal.eltayara.net/"/>
-  <updated>2017-05-07T17:07:45+00:00</updated>
+  <updated>2017-07-27T20:36:53+00:00</updated>
   <id>http://bilal.eltayara.net/</id>
   <author>
     <name><![CDATA[El Tayara Bilal]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Agile Managers, A Blind Spot?]]></title>
+    <link href="http://bilal.eltayara.net/blog/2017/07/27/agile-managers/"/>
+    <updated>2017-07-27T20:20:14+00:00</updated>
+    <id>http://bilal.eltayara.net/blog/2017/07/27/agile-managers</id>
+    <content type="html"><![CDATA[<p>When deploying lean and agility a lot of recommendation exist on how to take care of your collaborators during this change process. <br/>
+In the literature, agile experts insist a lot on the necessity to pay attention in giving the right level of empowerment to teams and individuals. Teams are encouraged to self-organize, to take things in hand and work actively on improving their deliverable and their process.<br/>
+Moreover, management is asked to provide a safe environment that foster experimentation and give the team the right to learn from its failures.<br/>
+The manager role is banished in all agile frameworks, and rather replaced by team supporting roles, such as Scrum Master and Product Owner in SCRUM framework. These new roles are rather focused on helping the team reach its goals in a servant-leader manner. <br/>
+All this looks great, self-organization, empowerment, decentralized decision making &hellip; teamwork sounds great in an agile world, but unfortunately there&rsquo;s a caveat.</p>
+
+<p><a href="/images/2017-07-27-agile-managers/and-pretty-agile.jpg.jpg"><img class="center" src="/images/2017-07-27-agile-managers/and-pretty-agile.jpg"></a></p>
+
+<!-- more -->
+
+
+<p>Often lean and agile frameworks are deployed and applied to the corporate process delivering values while the organization remain the same. For the company board, managers are still part of the organizational chart and are still accountable on achieving the business goals. The same managers to which agile experts are saying to let go, give the teams autonomy and a safe environment. But what about these managers, who is giving them the safe environment to let go? How a manager accountable for his teams’ deliveries can feel safe while he&rsquo;s accountable on the performance of his teams.  Well the obvious answer is, in the same way he should provide a safe environment for his collaborators, his superiors should equally provide him with one to operate within, self-organize and learn. <br/>
+From this, it&rsquo;s clear that, when it comes to agility, the whole chain of command should apply the same principles.  Traditional command and control management is incompatible with the mission command style of agile teams, thus breaking the agile chain will only lead to failure. <br/>
+Deploying agility in enterprise can&rsquo;t be done only for business processes it should be holistic and include the organizational processes too. Even more in case of phased deployment, enterprise should rather start by deploying agility to the organizational processes to shift the mindsets and interactions, doing this will facilitate the deployment of agility for business processes and increase the chances of success. <br/>
+Unfortunately, most of the enterprises, if not all, start deploying agility to business processes. The choice is usually driven by the gains perceived in improving the business processes, while ignoring the strong dependency on the organizational processes. The irony is that the agile product management practices should have helped to get the correct sequencing, and the enterprise most probably used transnational management practices to plan and deploy agility! Food for thought &hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Turn The Software Development Team Around With Scrum]]></title>
@@ -244,76 +267,6 @@ Your team is extremely busy and improvement actions are piling up in a todo list
 Clearly the teams not improving, and it will soon start loosing faith in retrospectives and see them rather as waste.<br/>
 This pitfall can be avoided by simply adding the identified improvement actions to the team backlog and treat them as any other task in the backlog.  Apply to them the same prioritizing technique and plan them accordingly. <br/>
 In the Scrum framework this technique is called &ldquo;Scrumming the Scrum&rdquo;.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A Simple Way to Run a Solution Focused Retrospective]]></title>
-    <link href="http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective/"/>
-    <updated>2016-06-18T08:03:51+00:00</updated>
-    <id>http://bilal.eltayara.net/blog/2016/06/18/a-simple-way-to-run-a-solution-focused-retrospective</id>
-    <content type="html"><![CDATA[<p>While attending to a <a href="https://management30.com/events/two-day-course/">2-day course on Management 3.0</a>, on of the new things I discovered was the &ldquo;solution focus&rdquo; approach to improving things. Googling on the matter I learned that this technique come from the <a href="https://en.wikipedia.org/wiki/Solution_focused_brief_therapy">&ldquo;Solution focused brief therapy&rdquo;</a>.</p>
-
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/problem-solution.jpg"></p>
-
-<p>In a solution focused brief therapy (SFBT) the patient is asked to focus on solution-building rather than problem-solving. This can be achieved by exploring current resources and future hopes rather than present problems and past causes. <br/>
-First thing that popped to my mind when discovering SFBT, is its similarity to an agile retrospective.<br/>
-Retrospective main aim is to spot improvement opportunities and come up with actions to make things better in the future.</p>
-
-<p>I&rsquo;ve been conducting and participating to retrospectives for several years now, but unlike SFBT, we were often digging to identify the root-cause of problems and then trying to figure out solutions.<br/>
-SFBT opened a new perspective for me. Finding the root-cause in a retrospective is putting the effort in looking into the past. Applying SFBT to a retrospective implied not putting the effort on analyzing what happened but rather putting it in finding an action that can lead to a better future.</p>
-
-<p>How can you do that? Here&rsquo;s the simple recipe I used.</p>
-
-<!-- more -->
-
-
-<p>When conducting retrospective I like to follow the structure proposed in <a href="https://www.youtube.com/watch?v=w8w-dFrmovQ">&ldquo;Agile Retrospectives: Making Good Teams Great&rdquo;</a> by Esther Derby and Diana Larsen. I always structure my retrospective accordingly.</p>
-
-<p>I start by a <strong><em>set the stage</em></strong> activity to break the ice, and a <strong><em>closing</em></strong> activity to share appreciations or get feedback. You can compare these to a starter and a desert in 3-courses menu.<br/>
-The main course is where most of the work happen, and it goes like this.<br/>
-It starts with an activity to <strong><em>gather data</em></strong> regarding the last iteration from the participants followed by an activity enabling <strong><em>insights generation</em></strong> leading the team to <strong><em>deciding what to do</em></strong>.</p>
-
-<p>The <strong><em>generate insight</em></strong> activity is usually where the team look at the problem, brainstorm to identify the root. Classical activities that can be used are 5-whys analysis, fishbone, etc. It&rsquo;s then followed by an activity to identify the actions and <strong><em>decide what to do</em></strong> like SMART goals, Short subjects, etc.</p>
-
-<p>In a <strong>solution focused</strong> retrospective both activities can be replaced by a single solution oriented activity conducted as follow:</p>
-
-<p>Assuming that the team did a <strong><em>gather data</em></strong> activity and identified themes to work on, divide the participants in groups of 3 or 4, each group takes a theme to work on. In some cases it might possible for the group to work on all the themes.</p>
-
-<p>Ask the group to consider the following two questions:</p>
-
-<ul>
-<li><strong>Regarding the chosen theme, on a scale from 1 to 10 where do you think we are today?</strong></li>
-</ul>
-
-
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/rating-scale.png"></p>
-
-<ul>
-<li><strong>What action cans be done in the next iteration accomplish a +1 improvement?</strong></li>
-</ul>
-
-
-<p>Then ask the group to work 4 small iterations, each one of 6 minutes as follows:</p>
-
-<p>Iteration 1 - <strong>On your own, self brain dumping / Silence / Post&#8217;it.</strong></p>
-
-<p>Iteration 2 - <strong>Together, Share.</strong></p>
-
-<p>Iteration 3 - <strong>Aggregate &amp; Consolidate.</strong></p>
-
-<p>Iteration 4 - <strong>Finalize &amp; prepare a 1&#8217;30 pitch to share with the other groups.</strong></p>
-
-<p><img class="center" src="/images/2016-06-18-a-simple-way-to-run-a-solution-focused-retrospective/post-it.jpg"></p>
-
-<p>I usually remind the groups to make us of the SMART goals approach when deciding on the actions for the next iteration.</p>
-
-<p>This recipe worked well for me, I found a good way to make the team discover new ways of identifying improvements actions. It&rsquo;s also a good way to bring novelty to the retrospective and avoid falling into monotony.  I&rsquo;m I&rsquo;ll be making use form time to time of it in my future working sessions. If you like this activity or would like to propose changes, please do not hesitate to leave your highly welcome comment.</p>
-
-<h2><br></h2>
-
-<p><em>photo credits:</em> <br/>
-<a href="https://www.flickr.com/photos/thesaleswhisperer/14188549988/" title="problems solutions entrepreneurship">problems solutions entrepreneurship</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>,<a href="https://www.flickr.com/photos/jogibaer2/5459043426/" title="Post-It">Post-It</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
 ]]></content>
   </entry>
   
