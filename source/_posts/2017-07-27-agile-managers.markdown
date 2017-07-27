@@ -11,7 +11,7 @@ Moreover, management is asked to provide a safe environment that foster experime
 The manager role is banished in all agile frameworks, and rather replaced by team supporting roles, such as Scrum Master and Product Owner in the SCRUM framework. These new roles are rather focused on helping the team reach its goals in a servant-leader manner.   
 All this looks great, self-organization, empowerment, decentralized decision making ... teamwork sounds great in an agile world, but unfortunately there's a caveat.  
 
-[{% img center /images/2017-07-27-agile-managers/and-pretty-agile.jpg %}](/images/2017-07-27-agile-managers/and-pretty-agile.jpg.jpg)
+[{% img center /images/2017-07-27-agile-managers/and-pretty-agile.jpg %}](/images/2017-07-27-agile-managers/and-pretty-agile.jpg)
 
 <!-- more -->
 
