@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/</loc>
+    <lastmod>2017-10-22T13:35:17+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2017/07/27/agile-managers/</loc>
     <lastmod>2017-07-27T20:20:14+00:00</lastmod>
   </url>
@@ -148,5 +152,11 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/management-3-dot-0/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/software-architecture/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/technology/</loc>
   </url>
 </urlset>

@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Beware The Too-Fast, Too-Soon Trap - Bilal El Tayara</title>
+  <meta name="author" content="El Tayara Bilal">
+
+  
+  <meta name="description" content="On the 16th of October 2017 took place the O'Reilly Software Architecture Conference in London. During the first two days, I attended to keynotes and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Bilal El Tayara" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-62629468-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+    <li><a href="https://feedburner.google.com/fb/a/mailverify?uri=BilalElTayara&amp;loc=en_US" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="bilal.eltayara.net">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+    <li><a href="/">
+        <span class="blue_light">
+            Bilal El Tayara
+        </span>
+       
+    </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>  
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Beware the Too-Fast, Too-Soon Trap</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-10-22T13:35:17+00:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>On the 16th of October 2017 took place the <a href="https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/grid/public/2017-10-16">O&#8217;Reilly Software Architecture Conference</a> in London. During the first two days, I attended to keynotes and talks where the <a href="https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/speakers">speakers</a> shared their learning and thoughts on software architecture, architects roles, architecture documentation, developers skills both technical and soft.</p>
+
+<p>If you&rsquo;re in the enterprise software development space, you&rsquo;re probably aware that two types of categories of businesses exist out there, the ones that have a micro-services architecture and are practicing continuous deployment, and the others struggling to get there, dealing with their fat old <a href="https://en.wikipedia.org/wiki/Monolithic_system">monolithic</a> application. Clearly, the monolithic architecture is still heavily present in the industry and the move towards modularity is still a case by case challenge.</p>
+
+<p>What I heard in the talks and during my discussions with the experts, surprised me and reassured me at the same time. When it comes to breaking down the monolith, all seemed to agree on a common approach, a pragmatic approach.</p>
+
+<p>It started in the key notes, with <a href="http://www.oreilly.com/pub/au/3609">Mark Richards</a> using the <a href="https://en.wikipedia.org/wiki/Steeplechase">Steeplechase</a> metaphor to explain how companies should move towards micro-services.</p>
+
+<p><a href="/images/2017-10-22-beware-the-too-fast/steeplechase.jpg"><img class="center" src="/images/2017-10-22-beware-the-too-fast/steeplechase.jpg"></a></p>
+
+<!-- more -->
+
+
+<p>In summary, what Mark says, companies moving from monolithic application to a <a href="https://en.wikipedia.org/wiki/Microservices">micro-services</a> architecture are like a person that never rode a horse, starts directly practicing steeplechase. Obviously the person is going to fall, and the fall will be hard.
+The common sense would be to first learn how to ride a horse, and then to learn how to ride fast, and then and only then you try steeplechase.</p>
+
+<p>Applying this approach to the monolithic application means that the first step is to move to a <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">service oriented architecture</a> (SOA), this doesn&rsquo;t require <a href="https://en.wikipedia.org/wiki/DevOps">DevOps</a>, it doesn&rsquo;t require organizational change either, and no deployment model change.
+After this first step, the move to micro-services can be initiated. Mark Richards recipe is not to move the whole application but rather start by the portion that are customer facing and where a micro-service model will bring added value to the customer.</p>
+
+<p>A bit later, while discussing with <a href="https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/speaker/278928">James Thompson</a> on learning culture in software development organizations, I asked him if he faces situation where the developers eagerness to learn new stuff could put technological choices at risk. He smiles and deliberately tells me &ldquo;<em>I always choose boring technologies</em>&rdquo;. He recommends to stick proven technology as long as it does the job ; &ldquo;<em>if postgersql can do the job, don&rsquo;t use mongodb just because it&rsquo;s webscale</em>&rdquo;. For him, the real challenge is knowing  when to invest in new technology that represent real value to the organization. His recipe to tackling this, is to work on moving the team from a developer mindset to an engineering mindset. A mindset that cares about the product being built and that cares to have a rigorous process from writing code to deployment and customer experience. For James, what could hinder companies in such approach, is the long client feedback loop, the longer it is the harder is to make the shift. Inhis opinion, only organizational changes can help overcoming the feedback loop issue.</p>
+
+<p><a href="/images/2017-10-22-beware-the-too-fast/learning.jpg"><img class="center" src="/images/2017-10-22-beware-the-too-fast/learning.jpg"></a></p>
+
+<p>On another &ldquo;meet the experts&rdquo; session, I had the chance to assist to a round table with <a href="http://samnewman.io/">Sam Newman</a>. As author of the book <a href="http://samnewman.io/books/building_microservices/">Building Microservices</a>, it was only normal to ask him how one can move form monolithic application to a micro-services architectures. And again I was happy to hear a pragmatic answer advising people to seek for modularity first before jumping to micro-services. His point of view is that modularisation still bring a lot of value, start from what the language can bring you ; if you&rsquo;re in java use java modules or jars ; having a clean modular architecture is the first step. And then and only consider moving to a microservice what would bring more value to the product and the customer, &ldquo;&hellip; the goal is not to move the application to a micro-services architecture, but rather to make it bring  in the money to the company&hellip;&rdquo; he said laughing out loud !  Again his point was about taking the time to learn and get familiar with micro-services before moving towards, and after that only to move once the value of the shift is identified.</p>
+
+<p>Finally, in his talk about <a href="Cloud%20Native%20Designs">Cloud Native Designs</a>, <a href="https://conferences.oreilly.com/software-architecture/sa-eu/public/schedule/speaker/122725">Michael Hausenblas</a> states the same idea when it comes to moving to DevOps. He describes a  Cloud Native Dev and Ops Maturity Model, with four different levels and again stresses on the necessity to go through the maturity levels one level at the time. It&rsquo;s a learning path, and by jumping too fast too early the risk of failing is high.
+To sum it all up, one of my major takeaway from these talks and discussions is the <strong>baby steps approach</strong>, the importance of <strong>taking the time to learn</strong> before jumping into new things, and moreover the importance to <strong>be guided by the value</strong> the change will bring to the organization.</p>
+
+<p><a href="/images/2017-10-22-beware-the-too-fast/path.jpg"><img class="center" src="/images/2017-10-22-beware-the-too-fast/path.jpg"></a></p>
+
+<h2><br></h2>
+
+<p><em>photo credits:</em> <br/>
+<a href="https://www.flickr.com/photos/elchurro/7237903054/" title="Learning">Learning</a> <a href="https://creativecommons.org/licenses/by-sa/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/vegaseddie/6944135089/" title="Huge Leap From Horse">Huge Leap From Horse</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a>, <a href="https://www.flickr.com/photos/dhdesign/1032756532/" title="Bush Path">Bush Path</a> <a href="https://creativecommons.org/licenses/by/2.0/">(license)</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">El Tayara Bilal</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-10-22T13:35:17+00:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/software-architecture/'>software architecture</a>, <a class='category' href='/blog/categories/software-development/'>software development</a>, <a class='category' href='/blog/categories/technology/'>technology</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/" data-via="el_tayara" data-counturl="http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/07/27/agile-managers/" title="Previous Post: Agile Managers, A Blind Spot?">&laquo; Agile Managers, A Blind Spot?</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>  
+  <div style="float:left;display:block;"><img src="/images/bil-t.png"> <alt="Photo of the Author" style="margin-right: 15px;"/></a></div>
+  <p><br>
+  <strong>Bilal El Tayara</strong>
+  <br>Software Development Enthusiast.
+  <br><a href="https://fr.linkedin.com/in/bilaltayara" rel="author">Read more »</a>
+  <div style="clear:both;"></div>
+</section>
+
+<section class="twitterOct">
+  <h1 style="margin-bottom: 0.4em"> Tweets </h1>
+  <a class="twitter-timeline"
+	 data-dnt="true" href="https://twitter.com/el_tayara" 
+     data-widget-id="594631932786409472">
+     
+     Tweets by @el_tayara
+  </a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/bil-t">@bil-t</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bil-t',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/10/22/beware-the-too-fast/">Beware The Too-Fast, Too-Soon Trap</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/07/27/agile-managers/">Agile Managers, A Blind Spot?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/05/07/turn-the-software-development-team-around-with-scrum/">Turn The Software Development Team Around With Scrum</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/02/25/managing-agile-autonomous-teams-a-paradox/">Managing Agile Autonomous Teams : A Paradox ?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/12/17/why-developers-need-t-shaped-skills/">Why Developers Need T-shaped Skills</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/113857264012711812244?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - El Tayara Bilal -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'bilal-el-tayara';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/';
+        var disqus_url = 'http://bilal.eltayara.net/blog/2017/10/22/beware-the-too-fast/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
