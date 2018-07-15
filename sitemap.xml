@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://bilal.eltayara.net/blog/2018/07/15/how-i-started-sketchnoting/</loc>
+    <lastmod>2018-07-15T12:04:51+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://bilal.eltayara.net/blog/2018/05/27/my-takeaways-from-barbara-oakleys-learning-how-to-learn/</loc>
     <lastmod>2018-05-27T14:59:14+00:00</lastmod>
   </url>
@@ -165,5 +169,14 @@
   </url>
   <url>
     <loc>http://bilal.eltayara.net/blog/categories/personal-development/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/blog/categories/sketchnote/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/posts/2/</loc>
+  </url>
+  <url>
+    <loc>http://bilal.eltayara.net/posts/3/</loc>
   </url>
 </urlset>
